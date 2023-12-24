@@ -1,0 +1,39 @@
+German,English,Gender,Box,Passes,Fails
+Brücke,Bridge,F,0,0,0
+Hotel,Hotel,N,0,0,0
+Bäckerei,Bakery,F,0,0,0
+Bauernhof,Farm,M,0,0,0
+Gericht,Court,N,0,0,0
+Markt,Market,M,0,0,0
+Kino,Movie theatre,N,0,0,0
+Kirche,Church,F,0,0,0
+Apotheke,Pharmacy,F,0,0,0
+Zoo,Zoo,M,1,2,0
+Klub,Club,M,1,2,0
+Bahnhof,Train station,M,0,1,1
+Flughafen,Airport,M,0,0,2
+Lager,Camp,N,0,1,2
+Land,Country,N,1,2,0
+Apartment,Apartment,N,1,2,0
+Krankenhaus,Hospital,N,0,4,2
+Straße,Street,F,0,3,1
+Weltraum,Outer space,M,0,6,4
+Bank,Bank,F,1,2,0
+Haus,House,N,1,2,0
+Marktplatz,Marketplace,M,1,2,0
+Universität,University,F,0,3,1
+Zimmer,Room,N,1,2,0
+Geschäft,Shop,N,0,13,10
+Bibliothek,Library,F,1,2,0
+Stadt,Town,F,1,8,2
+Schule,School,F,0,3,1
+Park,Park,M,1,2,0
+Supermarkt,Supermarket,M,1,2,0
+Bar,Bar,F,1,2,0
+Hafen,Port,M,0,3,1
+Museum,Museum,N,1,2,0
+Restaurant,Restaurant,N,1,2,0
+Cafe,Cafe,N,1,2,0
+Einkaufszentrum,Mall,N,0,6,4
+Polizeistation,Police station,F,0,0,0
+Büro,Office,N,0,1,1

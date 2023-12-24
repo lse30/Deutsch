@@ -1,0 +1,8 @@
+German,English,Gender,Box,Passes,Fails
+Donnerstag,Thursday,M,0,0,0
+Sonntag,Sunday,M,0,0,0
+Mittwoch,Wednesday,None,0,0,0
+Montag,Monday,None,1,2,0
+Freitag,Friday,None,1,2,0
+Dienstag,Tuesday,None,1,2,0
+Samstag,Saturday,None,1,2,0

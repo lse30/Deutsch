@@ -1,0 +1,13 @@
+German,English,Gender,Box,Passes,Fails
+Handy,Cellphone,N,0,0,0
+Computer,Computer,M,0,0,0
+Programm,Program,N,0,0,0
+Fernsehen,Television,N,0,0,0
+Radio,Radio,N,0,0,0
+Uhr,Clock,F,0,3,1
+Laptop,Laptop,M,0,3,1
+Fan,Fan,M,1,2,0
+Internet,Internet,N,1,2,0
+Bildschirm,Screen,M,0,5,3
+Lampe,Lamp,F,1,2,0
+Kamera,Camera,F,0,3,1

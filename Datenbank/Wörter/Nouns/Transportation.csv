@@ -1,0 +1,16 @@
+German,English,Gender,Box,Passes,Fails
+Zug,Train,M,0,0,0
+Flugzeug,Plane,N,0,0,0
+Fahrrad,Bicycle,N,0,0,0
+Boot,Boat,N,0,0,0
+Lastwagen,Truck,M,1,2,0
+Van,Van,M,1,2,0
+Motor,Engine,M,1,5,1
+Roller,Scooter,M,1,2,0
+Bus,Bus,M,1,2,0
+Transport,Transportation,M,0,7,3
+Bahnticket,Train ticket,N,0,3,1
+Schiff,Ship,N,0,7,3
+Auto,Car,N,0,0,0
+Benzin,Fuel,N,0,0,0
+Motorrad,Motorbike,N,0,0,0

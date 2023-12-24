@@ -1,0 +1,10 @@
+German,English,Gender,Box,Passes,Fails
+Kunststoff,Plastic,M,0,0,0
+Holz,Wood,N,1,8,4
+Glas,Glass,N,1,5,1
+Silber,Silver,N,1,8,2
+Gold,Gold,N,1,2,0
+Metall,Metal,N,1,8,2
+Diamant,Diamond,M,0,4,2
+Stein,Stone,M,1,2,0
+Kupfer,Copper,N,0,5,3

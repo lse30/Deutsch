@@ -1,0 +1,25 @@
+German,English,Gender,Box,Passes,Fails
+Frankreich,France,N,0,0,0
+England,England,N,0,0,0
+Großbritannien,United kingdom,N,0,0,0
+Belgien,Belgium,N,0,0,0
+Polen,Poland,None,1,2,0
+Vereinigte staaten,United states,None,0,1,0
+Niederlande,Netherlands,None,1,2,0
+Russland,Russia,None,1,2,0
+Österreich,Austria,None,1,2,0
+Brasilien,Brazil,None,1,2,0
+Japan,Japan,None,1,2,0
+Neuseeland,New zealand,None,1,2,0
+Amerika,America,None,1,3,0
+Australien,Australia,None,1,2,0
+Mexiko,Mexico,None,1,2,0
+Spanien,Spain,None,1,2,0
+Griechenland,Greece,None,1,6,2
+Deutschland,Germany,None,1,2,0
+China,China,None,1,2,0
+Kanada,Canada,None,1,2,0
+Dänemark,Denmark,None,1,2,0
+Indien,India,None,1,2,0
+Italien,Italy,None,1,2,0
+Schweiz,Switzerland,None,0,8,4

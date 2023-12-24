@@ -1,0 +1,212 @@
+Wort,English,Gender,Category,Box,Passes,Fails
+Eule,Owl,F,animals,0,0,0
+Fisch,Fish,M,animals,0,0,0
+Bär,Bear,M,animals,0,0,0
+Elefant,Elephant,M,animals,0,0,0
+Hund,Dog,M,animals,0,0,0
+Maus,Mouse,F,animals,0,0,0
+Hemd,Shirt,N,clothes,0,0,0
+Jeans,Jeans,F,clothes,0,0,0
+Mutter, Mother, F,familie,0,0,0
+Junge,Boy,M,familie,0,0,0
+Mann,Man,M,familie,0,0,0
+Freundin,Friend(f),F,familie,0,0,0
+Frau,Woman,F,familie,0,0,0
+Opa,Grandpa,M,familie,0,0,0
+Wasser,Water,N,food,0,0,0
+Brot,Bread,N,food,0,0,0
+Döner,Doner,M,food,0,0,0
+Pizza,Pizza,F,food,0,0,0
+Salz,Salt,N,food,0,0,0
+Tomaten,Tomato,F,food,0,0,0
+Wein,Wine,M,food,0,0,0
+Schnitzel,Schnitzel,N,food,0,0,0
+Fleisch,Meat,N,food,0,0,0
+Wasserflasche,Water bottle,F,food,0,0,0
+Milch,Milk,F,food,0,0,0
+Obstsalat,Fruit salad,M,food,0,0,0
+Kaffee,Coffee,M,food,0,0,0
+Sandwich,Sandwich,N,food,0,0,0
+Bier,Beer,N,food,0,0,0
+Tee,Tea,M,food,0,0,0
+Wurst,Sausage,F,food,0,0,0
+Ei,Egg,N,food,0,0,0
+Salat,Salad,M,food,0,0,0
+Couch,Couch,F,furnature,0,0,0
+Bett,Bed,N,furnature,0,0,0
+Stuhl,Chair,M,furnature,0,0,0
+Ärztin,Docter(m),M,jobs,0,0,0
+Kellner,Waiter(m),M,jobs,0,0,0
+Professor,Professor(m),M,jobs,0,0,0
+Eins,One,F,numbers,0,0,0
+Zwei,Two,F,numbers,0,0,0
+Drei,Three,F,numbers,0,0,0
+Vier,Four,F,numbers,0,0,0
+Fünf,Five,F,numbers,0,0,0
+Sechs,Six,F,numbers,0,0,0
+Acht,Eight,F,numbers,0,0,0
+Neun,Nine,F,numbers,0,0,0
+Zehn,Ten,F,numbers,0,0,0
+Elf,Eleven,F,numbers,0,0,0
+Zwölf,Twelve,F,numbers,0,0,0
+Dreizehn,Thirteen,F,numbers,0,0,0
+Vierzehn,Fourteen,F,numbers,0,0,0
+Fünfzehn,Fifteen,F,numbers,0,0,0
+Sechzehn,Sixteen,F,numbers,0,0,0
+Achtzehn,Eighteen,F,numbers,0,0,0
+Neunzehn,Nineteen,F,numbers,0,0,0
+Zwanzig,Twenty,F,numbers,0,0,0
+Dreißig,Thirty,F,numbers,0,0,0
+Fünfunddreißig,Thirty five,F,numbers,0,0,0
+Fünfundzwanzig,Twenty five,F,numbers,0,0,0
+Perfekt,Perfect,_,other,0,0,0
+Türkisch,Turkish,_,other,0,0,0
+Die,The,_,other,0,0,0
+Eine,A,_,other,0,0,0
+Dollar,Dollar,M,other,0,0,0
+Uhr,Hour,_,other,0,0,0
+Entschuldigung,Excuse me,_,other,0,0,0
+Aber,But,_,other,0,0,0
+Fahrkarte,Ticket,_,other,0,0,0
+Schwimmbad,Swimming pool,_,other,0,0,0
+Was,What,_,other,0,0,0
+Sonnencreme,Sunscreen,_,other,0,0,0
+Basketball,Basketball,_,other,0,0,0
+Kirche,Church,_,other,0,0,0
+Russisch,Russian,_,other,0,0,0
+Super,Great,_,other,0,0,0
+Da drüben,Over there,_,other,0,0,0
+Geöffnet,Open,_,other,0,0,0
+Ein,A,_,other,0,0,0
+Ich,I,_,other,0,0,0
+Gut,Good,_,other,0,0,0
+Kalt,Cold,_,other,0,0,0
+Warm,Warm,_,other,0,0,0
+Zoo,Zoo,_,other,0,0,0
+T-shirt,T-shirt,_,other,0,0,0
+Schwedisch,Swedish,_,other,0,0,0
+Euro,Euro,M,other,0,0,0
+In der nähe,Nearby,_,other,0,0,0
+München,Munich,_,other,0,0,0
+Guten tag,Good morning,_,other,0,0,0
+Alt,Old,_,other,0,0,0
+Bitte,Please,_,other,0,0,0
+Hier,Here,_,other,0,0,0
+Jobinterview,Job interview,_,other,0,0,0
+Kein,No,_,other,0,0,0
+Auf wiedersehen,Goodbye,_,other,0,0,0
+Schnell,Fast,_,other,0,0,0
+Für,For,_,other,0,0,0
+Toll,Great,_,other,0,0,0
+Circa,Approximately,_,other,0,0,0
+Groß,Big,_,other,0,0,0
+Der,The,_,other,0,0,0
+Italienisch,Italian,_,other,0,0,0
+Sehr,Very,_,other,0,0,0
+Deutsch,German,_,other,0,0,0
+Ich kann nicht,I can't,_,other,0,0,0
+Süß,Sweet,_,other,0,0,0
+Surfst,Surf,_,other,0,0,0
+Heiß,Hot,_,other,0,0,0
+Prost,Cheers,_,other,0,0,0
+Guten abend,Good evening,_,other,0,0,0
+Rechnung,Check,F,other,0,0,0
+Mitbewohnerin,Roommate(f),F,people,0,0,0
+Mitbewohner,Roommate(m),M,people,0,0,0
+Hotel,Hotel,N,places,0,0,0
+Markt,Market,M,places,0,0,0
+Österreich,Austria,N,places,0,0,0
+Supermarkt,Supermarket,M,places,0,0,0
+Bäckerei,Bakery,F,places,0,0,0
+Park,Park,M,places,0,0,0
+Apotheke,Pharmacy,F,places,0,0,0
+Konzert,Concert,N,places,0,0,0
+Wien,Vienna,N,places,0,0,0
+Badezimmer,Bathroom,N,places,0,0,0
+Amerika,America,N,places,0,0,0
+Montag,Monday,M,time,0,0,0
+Tag,Day,M,time,0,0,0
+Dienstag,Tuesday,M,time,0,0,0
+Katze,Cat,F,animals,0,0,0
+Pullover,Jumper,M,clothes,0,0,0
+Käse,Cheese,M,food,0,0,0
+Zucker,Sugar,M,food,0,0,0
+Essen,Food,N,food,0,0,0
+Rotwein,Red wine,M,food,0,0,0
+Suppe,Soup,F,food,0,0,0
+Mineralwasser,Mineral water,N,food,0,0,0
+Tisch,Table,M,furnature,0,0,0
+Kellnerin,Waitress,F,jobs,0,0,0
+Professorin,Professor(f),F,jobs,0,0,0
+Lehrer,Teacher(m),M,jobs,0,0,0
+Lehrerin,Teacher(f),F,jobs,0,0,0
+Schauspielerin,Actress,F,jobs,0,0,0
+Schauspieler,Actor,M,jobs,0,0,0
+Studentin,Student(f),F,jobs,0,0,0
+Student,Student(m),M,jobs,0,0,0
+Heute morgen,This morning,_,other,0,0,0
+Englisch,English,_,other,0,0,0
+Nervös,Nervous,_,other,0,0,0
+Modern,Modern,_,other,0,0,0
+Gleis,Track,_,other,0,0,0
+Er,He,_,other,0,0,0
+Wirklich,Really,_,other,0,0,0
+Guten morgen,Good morning,_,other,0,0,0
+Kein problem,No problem,_,other,0,0,0
+Station,Station,_,other,0,0,0
+Toiletten,Toilet,_,other,0,0,0
+Schneit,Snowing,_,other,0,0,0
+Rechts,To the right,_,other,0,0,0
+Glas,Glass,N,other,0,0,0
+Heiße,,_,other,0,0,0
+Danke,Thank you,_,other,0,0,0
+Hallo,Hello,_,other,0,0,0
+Jung,Young,_,other,0,0,0
+Surft,,_,other,0,0,0
+Es tut mir leid,I'm sorry,_,other,0,0,0
+Kreditkarte,Credit card,F,other,0,0,0
+Interessant,Interesting,_,other,0,0,0
+Mit,With,_,other,0,0,0
+Nein,No,_,other,0,0,0
+Lecker,Delicious,_,other,0,0,0
+Cool,Cool,_,other,0,0,0
+Ok,Ok,_,other,0,0,0
+Keinen,,_,other,0,0,0
+Morgen,Morning,_,other,0,0,0
+Klein,Small,_,other,0,0,0
+Nicht,Not,_,other,0,0,0
+Fantastisch,Fantastic,_,other,0,0,0
+Laut,Loud,_,other,0,0,0
+Vielen dank,Thank you very much,_,other,0,0,0
+Du,You,_,other,0,0,0
+Wunderbar,Wonderful,_,other,0,0,0
+Teuer,Expensive,_,other,0,0,0
+Elegant,Elegant,_,other,0,0,0
+Polnisch,Polish,_,other,0,0,0
+Volleyball,Volleyball,_,other,0,0,0
+Schön,Beautiful,_,other,0,0,0
+Neu,New,_,other,0,0,0
+Geld,Money,_,other,0,0,0
+Jetzt,Now,_,other,0,0,0
+Heute,Today,_,other,0,0,0
+Geldautomat,Atm,_,other,0,0,0
+Freunde,Friend(f),F,people,0,0,0
+Herr,Mr,M,people,0,0,0
+Partnerin,Partner(f),F,people,0,0,0
+Partner,Partner(m),M,people,0,0,0
+Oma,Grandma,F,people,0,0,0
+Frei,Ms,M,people,0,0,0
+Universität,University,F,places,0,0,0
+Kanada,Canada,N,places,0,0,0
+Bibliothek,Library,F,places,0,0,0
+Stadtmuseum,City museum,N,places,0,0,0
+Straße,Street,F,places,0,0,0
+Marktplatz,Marketplace,M,places,0,0,0
+Stadt,City,F,places,0,0,0
+Deutschland,Germany,N,places,0,0,0
+Russland,Russia,N,places,0,0,0
+Fußball,Football,M,sports,0,0,0
+Samstag,Saturday,M,time,0,0,0
+Bus,Bus,F,transport,0,0,0
+Zug,Train,M,transport,0,0,0
+Herbst,Autumn,M,weather,0,0,0

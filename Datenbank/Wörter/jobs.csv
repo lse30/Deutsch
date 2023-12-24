@@ -1,0 +1,13 @@
+Wort, English, Gender, Box, Passes, Fails
+Ärztin,Docter(f),F,0,0,0
+Ärzt,Docter(m),M,0,0,0
+Kellner,Waiter,M,0,0,0
+Kellnerin,Waitress,F,0,0,0
+Professor,Professor(m),M,0,0,0
+Professorin,Professor(f),F,0,0,0
+Lehrer,Teacher(m),M,0,0,0
+Lehrerin,Teacher(f),F,0,0,0
+Schauspielerin,Actress,F,0,0,0
+Schauspieler,Actor,M,0,0,0
+Studentin,Student(f),F,0,0,0
+Student,Student(m),M,0,0,0

@@ -1,0 +1,17 @@
+German,English,Gender,Box,Passes,Fails
+Monat,Month,M,0,0,0
+Heute,Today,N,0,0,0
+Wochenende,Weekend,N,0,0,0
+Morgen,Morning,M,0,0,0
+Nachmittag,Afternoon,M,1,2,0
+Woche,Week,F,0,3,1
+Abend,Evening,M,0,4,2
+Sekunde,Second,F,1,2,0
+Tag,Day,M,1,2,0
+Stunde,Hour,F,0,4,4
+Uhr,Oclock,F,0,3,1
+Wochentag,Weekday,M,1,2,0
+Jahr,Year,N,0,3,1
+Zeit,Time,F,1,6,1
+Minute,Minute,F,1,2,0
+Nacht,Night,F,0,3,1
