@@ -1,4 +1,4 @@
-from gtts import gTTS
+import gtts
 from playsound import playsound
 import os
 
@@ -17,7 +17,7 @@ def play_sound(file, german, article=None):
         else:
             input_text = german
 
-        sound_obj = gTTS(text=input_text, lang=LANGUAGE)
+        sound_obj = gtts.gTTS(text=input_text, lang=LANGUAGE)
         sound_obj.save(sound_file)
 
     sound_file = os.path.abspath(sound_file)
