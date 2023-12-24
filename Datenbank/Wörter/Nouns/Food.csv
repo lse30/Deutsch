@@ -1,14 +1,11 @@
 German,English,Gender,Box,Passes,Fails
 Lamm,Lamb,N,0,0,0
-Apfel,Apple,M,0,0,0
 Banane,Banana,F,0,0,0
 Mais,Corn,M,0,0,0
 Öl,Oil,N,0,0,0
 Salz,Salt,N,0,0,0
 Essen,Food,N,0,0,0
-Wurst,Sausage,F,0,0,0
 Sandwich,Sandwich,N,0,0,0
-Tomate,Tomato,F,0,0,0
 Zucker,Sugar,M,1,2,0
 Pizza,Pizza,F,1,2,0
 Ei,Egg,N,1,2,0
@@ -17,11 +14,14 @@ Orange,Orange,F,1,2,0
 Zitrone,Lemon,F,1,2,0
 Kuchen,Cake,M,0,3,1
 Reis,Rice,M,1,2,0
-Schweinefleisch,Pork,N,0,3,1
 Fleisch,Meat,N,1,5,1
 Obstsalat,Fruit salad,M,1,2,0
 Suppe,Soup,F,1,2,0
 Käse,Cheese,M,1,6,2
 Döner,Doner kebab,M,1,2,0
-Salat,Salad,M,0,3,1
 Brot,Bread,N,1,2,0
+Wurst,Sausage,F,1,2,0
+Salat,Salad,M,1,5,1
+Apfel,Apple,M,0,3,1
+Schweinefleisch,Pork,N,0,6,2
+Tomate,Tomato,F,1,2,0

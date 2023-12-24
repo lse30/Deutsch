@@ -4,11 +4,16 @@ import os
 
 LANGUAGE = 'de'
 
+def german_file_name(german: str):
+    """cant save special chars to os"""
+    output = german.lower().replace('ü', 'ue').replace('ä', 'ae').replace('ö', 'öe').replace('ß', 'ss')
+    return output
+
 
 def play_sound(file, german, article=None):
     base_directory = file.replace('Wörter', 'Sound')
     base_directory = base_directory.replace('.csv', '')
-    sound_file = base_directory + f'/{german}.mp3'
+    sound_file = base_directory + f'/{german_file_name(german)}.mp3'
     if not os.path.exists(sound_file):
         if not os.path.exists(base_directory):
             os.makedirs(base_directory)
@@ -25,8 +30,8 @@ def play_sound(file, german, article=None):
 
 
 if __name__ == '__main__':
-    file_name = './../Datenbank/Phrasen/phrase_book.csv'
-    text = 'Ist das Kino in der Nähe'
-    art = None
+    file_name = './../Datenbank/Wörter/Nouns/Home.csv'
+    text = 'Küche'
+    art = 'Die'
 
     play_sound(file_name, text, art)

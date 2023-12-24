@@ -326,10 +326,18 @@ class FlashCard:
         word: WordData = self.system.serve_word()
         if word:
             print(word.category)
-            self.flash_card.config(text=word.get_next_prompt(), bg=self.style.surface, fg=self.style.on_background)
+            self.flash_card.config(
+                text=word.get_next_prompt(),
+                bg=self.style.surface,
+                fg=self.style.secondary
+            )
             self.counter.config(text=self.system.get_counter())
         else:
-            self.flash_card.config(text="END OF WORDLIST", bg=self.style.success_green, fg=self.style.on_background)
+            self.flash_card.config(
+                text="END OF WORDLIST",
+                bg=self.style.success_green,
+                fg=self.style.on_background
+            )
             self.counter.config(text=self.system.get_counter())
             self.system.update_words()
             self.system = None

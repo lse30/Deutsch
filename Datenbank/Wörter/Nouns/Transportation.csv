@@ -13,4 +13,4 @@ Bahnticket,Train ticket,N,0,3,1
 Schiff,Ship,N,0,7,3
 Auto,Car,N,0,0,0
 Benzin,Fuel,N,0,0,0
-Motorrad,Motorbike,N,0,0,0
+Motorrad,Motorbike,N,0,3,1

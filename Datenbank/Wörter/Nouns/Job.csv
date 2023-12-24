@@ -13,12 +13,12 @@ Künstler,Artist(m),M,0,0,1
 Ingenieur,Engineer(m),M,0,5,5
 Kellner,Waiter,M,1,2,0
 Arbeit,Job,F,0,4,2
-Anwältin,Lawyer(f),F,0,4,2
-Autor,Author(m),M,0,3,1
 Student,Student(m),M,1,2,0
 Anwalt,Lawyer(m),M,1,2,0
 Kellnerin,Waitress,F,1,2,0
 Künstlerin,Artist(f),F,0,3,1
 Polizistin,Policewoman,F,0,3,1
 Autorin,Author(f),F,1,2,0
-Schauspieler,Actor,M,0,3,1
+Anwältin,Lawyer(f),F,0,7,3
+Schauspieler,Actor,M,1,5,1
+Autor,Author(m),M,1,5,1

@@ -1,7 +1,5 @@
 German,English,Gender,Box,Passes,Fails
 Hut,Hat,M,0,0,0
-Hemd,Shirt,N,0,0,0
-Shorts,Shorts,F,0,0,0
 Mantel,Coat,M,0,0,0
 Fleck,Stain,M,1,2,0
 Pullover,Sweater,M,1,2,0
@@ -9,11 +7,13 @@ Socken,Socks,F,0,5,3
 Rock,Skirt,M,1,2,0
 Kleid,Dress,N,0,6,3
 T-shirt,T-shirt,N,0,3,1
-Kleidung,Clothes,F,0,0,0
-Anzug,Suit,M,0,2,1
 Gürtel,Belt,M,0,8,9
 Jeans,Jeans,F,1,2,0
 Schal,Scarf,M,0,5,3
 Schuhe,Shoes,F,0,6,3
 Hose,Pants,F,1,2,0
 Tasche,Pocket,F,0,0,2
+Shorts,Shorts,F,0,0,0
+Anzug,Suit,M,0,2,1
+Hemd,Shirt,N,0,3,1
+Kleidung,Clothes,F,1,2,0
