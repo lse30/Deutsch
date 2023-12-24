@@ -248,12 +248,24 @@ class FlashCard:
 
         top = tk.Toplevel(self.root)
         top.title("Select Files")
-        title = tk.Label(top, text='Select Files', font=self.style.standard_font)
+        top.config(bg=self.style.background)
+        title = tk.Label(
+            top,
+            text='Select Files',
+            font=self.style.standard_font,
+            bg=self.style.background,
+            fg=self.style.on_background,
+            pady=5,
+            padx=5
+        )
         title.pack()
         checkbox_frame = tk.Frame(
             master=top,
-            relief=tk.RAISED,
-            borderwidth=1
+            borderwidth=3,
+            relief=tk.GROOVE,
+            bg=self.style.surface,
+            pady=5,
+            padx=5
         )
         checkbox_frame.pack()
 
@@ -265,14 +277,18 @@ class FlashCard:
                 text=filename[0],
                 variable=checkbox_vars[i],
                 font=self.style.standard_font,
-                command=lambda i=i: on_checkbox_clicked(word_files[i][0], checkbox_vars[i])
+                command=lambda i=i: on_checkbox_clicked(word_files[i][0], checkbox_vars[i]),
+                bg=self.style.surface,
+                fg=self.style.on_surface
+
             )
             checkbox.grid(row=i, column=0, sticky=tk.W)
 
         button_frame = tk.Frame(
             master=top,
-            relief=tk.RAISED,
-            borderwidth=1
+            borderwidth=3,
+            relief=tk.GROOVE,
+            bg=self.style.primary
         )
         button_frame.pack()
         all_button = tk.Button(
@@ -281,7 +297,9 @@ class FlashCard:
             height=1,
             text="All",
             font=self.style.standard_font,
-            command=lambda: select_all_checkboxes(checkbox_vars)
+            command=lambda: select_all_checkboxes(checkbox_vars),
+            bg=self.style.surface,
+            fg=self.style.on_surface
         )
         all_button.grid(row=0, column=0)
         ok_button = tk.Button(
@@ -290,7 +308,9 @@ class FlashCard:
             height=1,
             text="Ok",
             font=self.style.standard_font,
-            command=submit_selection
+            command=submit_selection,
+            bg=self.style.surface,
+            fg=self.style.on_surface
         )
         ok_button.grid(row=0, column=1)
 
