@@ -1,4 +1,12 @@
 import os
+import logging
+
+
+def create_logger(name, log_level=logging.INFO):
+    logging.basicConfig()
+    logging.root.setLevel(log_level)
+
+    return logging.getLogger(name)
 
 
 def read_file(file_path):

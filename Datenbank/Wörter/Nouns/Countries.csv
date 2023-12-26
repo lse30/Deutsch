@@ -1,7 +1,4 @@
 German,English,Gender,Box,Passes,Fails
-England,England,N,0,0,0
-Großbritannien,United kingdom,N,0,0,0
-Belgien,Belgium,N,0,0,0
 Polen,Poland,None,1,2,0
 Niederlande,Netherlands,None,1,2,0
 Russland,Russia,None,1,2,0
@@ -20,6 +17,9 @@ Kanada,Canada,None,1,2,0
 Dänemark,Denmark,None,1,2,0
 Indien,India,None,1,2,0
 Italien,Italy,None,1,2,0
-Vereinigte staaten,United states,None,0,7,4
 Frankreich,France,None,1,2,0
 Schweiz,Switzerland,None,1,10,4
+Großbritannien,United kingdom,None,0,4,2
+England,England,None,0,1,0
+Belgien,Belgium,None,1,2,0
+Vereinigte staaten,United states,None,0,10,5

@@ -1,20 +1,23 @@
-from core_scripts import read_file, write_file
+from core_scripts import read_file, write_file, create_logger
 from random import shuffle, choice
 from typing import Dict, List, Optional, Tuple
 from text_to_speech import play_sound
 
 TEST_MODE = False
-debug_mode = False
 non_gender_nouns = ['Countries', 'DaysOfWeek', 'Months']
 MAX_WORDS = 20
+
+logger = create_logger(__name__)
+
+# TODO have better system for non gender important words or double spellings based on gender
 
 
 class WordData:
     def __init__(self, line: str, file: str, noun: bool = True):
         data = line.replace('\n', '').split(',')
         self.file_name: str = file
-        self.german: str = data[0]
-        self.english: str = data[1]
+        self.german: List[str] = data[0].split('|')
+        self.english: List[str] = data[1].split('|')
         self.gender: Optional[str] = None
         self.article: Optional[str] = None
         self.category: str = file.split('/')[-1].replace('.csv', '')
@@ -44,25 +47,25 @@ class WordData:
         self.current_prompt = choice(self.next_prompt)
         if self.gender:
             if self.current_prompt == 'g':
-                return f"{self.article} {self.german}? "
+                return f"{self.article} {self.german[0]}? "
             else:
-                return f"The {self.english}? "
+                return f"The {self.english[0]}? "
         if self.current_prompt == 'g':
-            return f"{self.german}? "
+            return f"{self.german[0]}? "
         else:
-            return f"{self.english}? "
+            return f"{self.english[0]}? "
 
     def as_german(self):
         if self.gender:
-            return f"{self.article} {self.german}"
-        return self.german
+            return f"{self.article} {self.german[0]}"
+        return self.german[0]
 
     def word_to_line(self) -> str:
         """
         Converts the object to a CSV line
         :return: csv line str
         """
-        return f"{self.german},{self.english},{self.gender},{self.box},{self.passes},{self.fails}\n"
+        return f"{'|'.join(self.german)},{'|'.join(self.english)},{self.gender},{self.box},{self.passes},{self.fails}\n"
 
     def is_answer_correct(self, answer: str) -> bool:
         """
@@ -75,45 +78,45 @@ class WordData:
 
         # if the prompt was in english (expect answer to be german)
         if self.current_prompt == 'e':
+            correct_answers = [x.lower() for x in self.german]
             if self.article:
                 article = answer.split(' ')[0]
                 german = answer.replace(f'{article} ', '')
-                if article == self.article.lower() and german == self.german.lower():
+                if article == self.article.lower() and german in correct_answers:
                     return True
             else:
-                if answer == self.german.lower():
+                if answer in [x.lower() for x in self.german]:
                     return True
         # prompt is german and expecting english
         else:
             answer = answer.replace('the ', '')
-            if answer == self.english.lower():
+            correct_answers = [x.lower() for x in self.english]
+            if answer in correct_answers:
                 return True
         return False
 
     def assess_answer(self, answer: str) -> bool:
         result = self.is_answer_correct(answer)
         if result:
-            if debug_mode:
-                print('Correct!')
+            logger.debug('Correct!')
             self.passes += 1
             self.next_prompt.remove(self.current_prompt)
             if not self.next_prompt:
                 self.box += 1
                 self.next_prompt = ['g', 'e']
         else:
-            if debug_mode:
-                print("That's not quite right")
+            logger.debug("That's not quite right")
             self.fails += 1
             self.fails_this_session += 1
             self.next_prompt.append(self.current_prompt)
-        if debug_mode:
-            print(self)
+
+            logger.debug(self)
         return result
 
     def __str__(self):
         if self.article:
-            return f"{self.article} {self.german}: The {self.english}"
-        return f"{self.german}: {self.english}"
+            return f"{self.article} {self.german[0]}: The {self.english[0]}"
+        return f"{self.german[0]}: {self.english[0]}"
 
 
 class LeitnerSystem:
@@ -166,8 +169,8 @@ class LeitnerSystem:
             sorted_words.setdefault(word.file_name, []).append(word)
         print(f"{promoted_words} words were promoted!")
         for file, updated_words in sorted_words.items():
-            updated_words_list = [x.german for x in updated_words]
-            file_data = [x for x in read_file(file) if x.split(',')[0] not in updated_words_list]
+            updated_words_list = [x.german[0] for x in updated_words]
+            file_data = [x for x in read_file(file) if x.split(',')[0].split('|')[0] not in updated_words_list]
             file_data += [x.word_to_line() for x in updated_words]
             write_file(file_data, file)
             print(f'Updated file {file}')
@@ -209,18 +212,16 @@ class LeitnerSystem:
 
     def play_word(self):
         cw = self.current_word
-        play_sound(cw.file_name, cw.german, cw.article)
+        play_sound(cw.file_name, cw.german[0], cw.article)
 
 
 if __name__ == '__main__':
-    file_path_1 = './../Datenbank/Wörter/Nouns/Animal.csv'
+    file_path_1 = './../Datenbank/Wörter/Nouns/Animals.csv'
     # file_path_2 = './../Datenbank/Wörter/Nouns/Months.csv'
 
     system = LeitnerSystem(file_path_1)
 
-    first_word = system.words_to_test_user[0]
-    system.serve_word()
-    system.play_word()
-    print(system.current_word)
+    # first_word = system.words_to_test_user[0]
+    # system.serve_word()
 
-    # system.test()
+    system.test()

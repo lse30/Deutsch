@@ -8,6 +8,6 @@ Milch,Milk,F,1,5,1
 Rotwein,Red wine,M,1,2,0
 Mineralwasser,Mineral water,N,1,2,0
 Bier,Beer,M,1,2,0
-Saft,Juice,M,0,6,2
-Cappuccino,Cappuccino,M,0,3,1
 Kaffee,Coffee,M,1,2,0
+Cappuccino,Cappuccino,M,1,5,1
+Saft,Juice,M,0,6,2

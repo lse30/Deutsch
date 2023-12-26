@@ -325,6 +325,7 @@ class FlashCard:
     def on_button_click(self):
         word: WordData = self.system.serve_word()
         if word:
+
             print(word.category)
             self.flash_card.config(
                 text=word.get_next_prompt(),
@@ -332,6 +333,7 @@ class FlashCard:
                 fg=self.style.secondary
             )
             self.counter.config(text=self.system.get_counter())
+            self.play_word()
         else:
             self.flash_card.config(
                 text="END OF WORDLIST",
@@ -391,6 +393,8 @@ class FlashCard:
                 current_prompt = self.system.current_word.current_prompt
                 if current_prompt == 'g' or self.fail_state:
                     self.system.play_word()
+                    return
+                else:
                     return
         print("system unavailable to play sound")
 

@@ -1,6 +1,5 @@
 German,English,Gender,Box,Passes,Fails
 Februar,February,M,0,0,0
-Oktober,October,M,0,0,0
 November,November,None,1,2,0
 Mai,May,None,1,2,0
 März,March,None,1,3,0
@@ -8,6 +7,7 @@ April,April,None,1,2,0
 Juli,July,None,1,2,0
 Januar,January,None,1,2,0
 September,September,None,1,2,0
-August,August,None,0,1,0
 Dezember,December,None,0,4,1
 Juni,June,None,0,0,0
+Oktober,October,None,1,2,0
+August,August,None,0,2,0
