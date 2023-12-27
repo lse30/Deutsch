@@ -1,18 +1,18 @@
 German,English,Gender,Box,Passes,Fails
-Kino,Movie theatre,N,0,0,0
+Kino,Movie theatre|Theatre,N,0,0,0
 Zoo,Zoo,M,1,2,0
 Klub,Club,M,1,2,0
 Bahnhof,Train station,M,0,1,1
 Lager,Camp,N,0,1,2
 Land,Country,N,1,2,0
 Apartment,Apartment,N,1,2,0
-Weltraum,Outer space,M,0,6,4
+Weltraum,Outer space|Space,M,0,6,4
 Bank,Bank,F,1,2,0
 Haus,House,N,1,2,0
 Marktplatz,Marketplace,M,1,2,0
 Zimmer,Room,N,1,2,0
 Bibliothek,Library,F,1,2,0
-Stadt,Town,F,1,8,2
+Stadt,City|Town,F,0,0,0
 Park,Park,M,1,2,0
 Supermarkt,Supermarket,M,1,2,0
 Bar,Bar,F,1,2,0
@@ -36,4 +36,4 @@ Flughafen,Airport,M,0,9,7
 Gericht,Court,N,0,5,3
 Bauernhof,Farm,M,0,6,4
 Hotel,Hotel,N,1,2,0
-Straße,Street,F,0,6,2
+Straße,Street|Road,F,0,0,0

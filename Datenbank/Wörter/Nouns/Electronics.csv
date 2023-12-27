@@ -9,5 +9,5 @@ Radio,Radio,N,1,2,0
 Programm,Program,N,1,2,1
 Uhr,Clock,F,0,8,4
 Bildschirm,Screen,M,0,12,8
-Fernsehen,Television,N,0,5,3
-Handy,Cellphone,N,0,0,0
+Fernsehen,Television|TV,N,0,5,3
+Handy,Cellphone|Phone,N,0,0,0

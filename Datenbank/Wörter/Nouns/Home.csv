@@ -13,7 +13,7 @@ Schreibtisch,Desk,M,1,14,8
 Kiste,Box,F,0,5,6
 Stuhl,Chair,M,0,5,3
 Werkzeug,Tool,N,0,6,4
-Bücherregal,Bookshelf,N,0,3,1
+Bücherregal,Bookshelf|Bookcase,N,0,3,1
 Pool,Pool,M,1,2,0
 Toilette,Toilet,F,0,6,2
 Boden,Floor,M,1,10,5

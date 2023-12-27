@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Tuple
 from text_to_speech import play_sound
 
 TEST_MODE = False
-non_gender_nouns = ['Countries', 'DaysOfWeek', 'Months']
+article_redundant_nouns = ['Countries', 'DaysOfWeek', 'Months']
 MAX_WORDS = 20
 
 logger = create_logger(__name__)
@@ -13,31 +13,69 @@ logger = create_logger(__name__)
 
 
 class WordData:
-    def __init__(self, line: str, file: str, noun: bool = True):
-        data = line.replace('\n', '').split(',')
+    def __init__(self, line: str, file: str):
         self.file_name: str = file
-        self.german: List[str] = data[0].split('|')
-        self.english: List[str] = data[1].split('|')
-        self.gender: Optional[str] = None
-        self.article: Optional[str] = None
         self.category: str = file.split('/')[-1].replace('.csv', '')
 
-        if noun and self.category not in non_gender_nouns:
-            self.gender = data[2]
-            if self.gender == 'M':
-                self.article = 'Der'
-            elif self.gender == 'F':
-                self.article = 'Die'
-            else:
-                self.article = 'Das'
+        self.german = None
+        self.english = None
+        self.gender = None
+        self.article = None
+        self.box = None
+        self.passes = None
+        self.fails = None
 
-        self.box: int = int(data[3])
-        self.passes: int = int(data[4])
-        self.fails: int = int(data[5])
+        self.read_line(line)
+
         self.fails_this_session: int = 0
-
         self.next_prompt: List[str] = ['g', 'e']
         self.current_prompt: Optional[str] = None
+
+    def read_line(self, line):
+        """
+        LINE FORMAT: German,English,Gender,Box,Passes,Fails\n
+        German and English:
+            PrimaryWord|AlternativeWord(FeminineVersion)
+        Gender:
+            M/F/N -> Masculine, Feminine, Neuter
+            V -> Variable Word
+            None -> Not Applicable
+        Box
+            Current Word Level
+        Passes
+            Recorded successes
+        Failed
+            Recorded failures
+        """
+        data = line.replace('\n', '').split(',')
+        german = data[0].split('|')
+        english = data[1].split('|')
+
+        gender = data[2]
+        if gender in ['M', 'F',  'N', 'V']:
+            if self.category in article_redundant_nouns:
+                article = None
+            else:
+                if gender == 'M':
+                    article = 'Der'
+                elif gender == 'F':
+                    article = 'Die'
+                elif gender == 'N':
+                    article = 'Das'
+                else:
+                    print("idk what to do here!")
+                    raise
+        else:
+            gender = None
+            article = None
+
+        self.german = german
+        self.english = english
+        self.gender = gender
+        self.article = article
+        self.box = int(data[3])
+        self.passes = int(data[4])
+        self.fails = int(data[5])
 
     def get_next_prompt(self) -> str:
         """
@@ -216,7 +254,7 @@ class LeitnerSystem:
 
 
 if __name__ == '__main__':
-    file_path_1 = './../Datenbank/Wörter/Nouns/Animals.csv'
+    file_path_1 = './../Datenbank/Wörter/Nouns/Animal.csv'
     # file_path_2 = './../Datenbank/Wörter/Nouns/Months.csv'
 
     system = LeitnerSystem(file_path_1)

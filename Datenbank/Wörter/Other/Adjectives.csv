@@ -2,10 +2,9 @@ German,English,Box,Passes,Fails
 Lang,Long,0,0,0
 Süß,Sweet,0,0,0
 Kurz,Short,0,0,0
-Groß,Tall,0,0,0
+Groß,Tall|Big|Large,0,0,0
 Breit,Wide,0,0,0
 Modern,Modern,0,0,0
-Groß,Big,0,0,0
 Klein,Small,0,0,0
 Wenig,Little,0,0,0
 Langsam,Slow,0,0,0
@@ -13,8 +12,7 @@ Schnell,Fast,0,0,0
 Heiß,Hot,0,0,0
 Kalt,Cold,0,0,0
 Warm,Warm,0,0,0
-Kühl,Cool,0,0,0
-Cool,Cool,0,0,0
+Kühl|Cool,Cool,0,0,0
 Neu,New,0,0,0
 Alt,Old,0,0,0
 Jung,Young,0,0,0
@@ -59,8 +57,7 @@ Hell,Light,0,0,0
 Interessant,Interesting,0,0,0
 Nervös,Nervous,0,0,0
 Wunderbar,Wonderful,0,0,0
-Super,Great,0,0,0
-Toll,Great,0,0,0
+Toll|Super,Great,0,0,0
 Perfekt,Perfect,0,0,0
 Lecker,Delicious,0,0,0
 Elegant,Elegant,0,0,0

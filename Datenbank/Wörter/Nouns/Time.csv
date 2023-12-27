@@ -5,7 +5,6 @@ Tag,Day,M,1,2,0
 Wochentag,Weekday,M,1,2,0
 Zeit,Time,F,1,6,1
 Minute,Minute,F,1,2,0
-Uhr,Oclock,F,1,5,1
 Morgen,Morning,M,1,2,0
 Monat,Month,M,0,3,1
 Abend,Evening,M,1,6,2
