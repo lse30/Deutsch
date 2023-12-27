@@ -58,6 +58,7 @@ noun_bank = {
         'Bahnhof.Train Station.M',
         'Brücke.Bridge.F',
         'Hotel.Hotel.N',
+        'Konzert.Concert.N',
         'Restaurant.Restaurant.N',
         'Cafe.Cafe.N',
         'Bäckerei.Bakery.F',
@@ -188,6 +189,7 @@ noun_bank = {
         'Schloss.Lock.N',
         'Garten.Garden.M',
         'Tasche.Bag.F',
+        'Flasche.Bottle.F',
         'Kiste.Box.F',
         'Werkzeug.Tool.N',
         'Schreibtisch.Desk.M',
@@ -713,6 +715,6 @@ if __name__ == '__main__':
     ]
 
     new_files = [base_dir + x for x in os.listdir(base_dir)] + other_files
-    old_files = ['./../Datenbank/master_word_bank.csv']
-    # old_files = ['./../Datenbank/Wörter/food.csv']
+    # old_files = ['./../Datenbank/master_word_bank.csv']
+    old_files = ['./../Datenbank/Wörter/other.csv']
     compare_datasets(old_files, new_files)
