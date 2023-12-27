@@ -1,6 +1,6 @@
-German,English,Box,Passes,Fails
-Der,The(m),0,0,0
-Die,The(f),0,0,0
-Das,The(n),0,0,0
-Ein,A(m),0,0,0
-Eine,A(f),0,0,0
+German,English,Gender,Box,Passes,Fails
+Der,The(m),,0,0,0
+Die,The(f),,0,0,0
+Das,The(n),,0,0,0
+Ein,A(m),,0,0,0
+Eine,A(f),,0,0,0

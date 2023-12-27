@@ -1,11 +1,11 @@
-German,English,Box,Passes,Fails
-Ich,I,0,0,0
-Du,You(informal),0,0,0
-Sie,You(formal),0,0,0
-Er,He,0,0,0
-Sie,She,0,0,0
-Es,It,0,0,0
-Wir,We,0,0,0
-Ihr,You all(informal),0,0,0
-Sie,You all(formal),0,0,0
-Sie,They,0,0,0
+German,English,Gender,Box,Passes,Fails
+Ich,I,,0,0,0
+Du,You(informal),,0,0,0
+Sie,You(formal),,0,0,0
+Er,He,,0,0,0
+Sie,She,,0,0,0
+Es,It,,0,0,0
+Wir,We,,0,0,0
+Ihr,You All(informal),,0,0,0
+Sie,You All(formal),,0,0,0
+sie,They,,0,0,0

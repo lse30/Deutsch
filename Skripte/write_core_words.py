@@ -9,8 +9,7 @@ Math/Measurements: meter, centimeter, kilogram, inch, foot, pound, half, circle,
 edge,corner
 """
 
-NOUN_HEADER = 'German,English,Gender,Box,Passes,Fails\n'
-ADJECTIVE_HEADER = 'German,English,Box,Passes,Fails\n'
+CSV_HEADER = 'German,English,Gender,Box,Passes,Fails\n'
 
 noun_bank = {
     'Animal': [
@@ -34,7 +33,7 @@ noun_bank = {
     ],
     'Transportation': [
         'Zug.Train.M',
-        'Flugzeug.Plane.N',
+        'Flugzeug.Plane|Aeroplane|Airplane.N',
         'Auto.Car.N',
         'Lastwagen.Truck.M',
         'Fahrrad.Bicycle|Bike.N',
@@ -96,7 +95,7 @@ noun_bank = {
         'Anzug.Suit.M',
         'Rock.Skirt.M',
         'Hemd.Shirt.N',
-        'T-shirt|Tshirt.T-shirt|Tshirt.N',
+        'T-Shirt|Tshirt.T-Shirt|Tshirt.N',
         'Hose.Pants.F',
         'Jeans.Jeans.F',
         'Shorts.Shorts.F',
@@ -417,7 +416,7 @@ noun_bank = {
         'Karte.Map.F',
         'Klang.Sound.M',
         'Bild.Image.N',
-        'Sonnencreme.Suncream.F',
+        'Sonnencreme.Suncream|Sunscreen.F',
         'Geld.Money.N',
         'Geldautomat.ATM.M',
         'Euro.Euro.M',
@@ -611,60 +610,53 @@ NOUN_PATH = './../Datenbank/Wörter/Nouns/'
 MISC_PATH = './../Datenbank/Wörter/Other/'
 
 
-def write_nouns():
-    noun_files = os.listdir(NOUN_PATH)
-    for category, words_list in noun_bank.items():
-        if category + '.csv' in noun_files:
+def write_words_to_file(word_category):
+
+    if word_category == 'Noun':
+        path = NOUN_PATH
+        word_bank = noun_bank.items()
+    elif word_category == 'Misc':
+        path = MISC_PATH
+        word_bank = misc_bank.items()
+    else:
+        raise NotImplementedError(f'Not Implemented: {word_category}')
+
+    existing_files = os.listdir(path)
+
+    for category, words_list in word_bank:
+        if category + '.csv' in existing_files:
             print("File already exists")
-            file_data = read_file(f"{NOUN_PATH}{category}.csv")
+            file_data = read_file(f"{path}{category}.csv")
             existing_words = [x.split(',')[0] for x in file_data[1:]]
         else:
-            file_data = [NOUN_HEADER]
+            file_data = [CSV_HEADER]
             existing_words = []
-        for word_data in words_list:
-            try:
-                german, english, gender = word_data.split('.')
-                german = german.capitalize()
-                english = english.capitalize()
-                gender = gender.capitalize()
-                if gender not in ['M', 'F', 'N']:
-                    print(word_data)
-                    raise Exception("Invalid gender")
-                if german not in existing_words:
-                    new_line = f"{german},{english},{gender},0,0,0\n"
-                    file_data.append(new_line)
-            except ValueError as err:
-                print(word_data)
-                raise err
-        write_file(file_data, f"{NOUN_PATH}{category}.csv")
 
-
-def write_other():
-    adjective_files = os.listdir(MISC_PATH)
-    for category, words_list in misc_bank.items():
-        if category + '.csv' in adjective_files:
-            print("File already exists")
-            file_data = read_file(f"{MISC_PATH}{category}.csv")
-            existing_words = [x.split(',')[0] for x in file_data[1:]]
-        else:
-            file_data = [ADJECTIVE_HEADER]
-            existing_words = []
         for word_data in words_list:
-            try:
-                german, english = word_data.split('.')
-                german = german.capitalize()
-                english = english.capitalize()
-                if german not in existing_words:
-                    new_line = f"{german},{english},0,0,0\n"
-                    file_data.append(new_line)
-            except ValueError as err:
-                print(word_data)
-                raise err
-        write_file(file_data, f"{MISC_PATH}{category}.csv")
+            line_data = word_data.split('.')
+            if len(line_data) == 3:
+                german = line_data[0]
+                english = line_data[1]
+                gender = line_data[2]
+            elif len(line_data) == 2:
+                german = line_data[0]
+                english = line_data[1]
+                gender = ''
+            else:
+                raise Exception(f"Invalid Line {word_data}")
+
+            if gender not in ['M', 'F', 'N', '']:
+                raise Exception(f"Invalid Line {word_data}")
+
+            if german not in existing_words:
+                new_line = f"{german},{english},{gender},0,0,0\n"
+                file_data.append(new_line)
+
+        write_file(file_data, f"{path}{category}.csv")
 
 
 def write_numbers():
-    file_data = [NOUN_HEADER]
+    file_data = [CSV_HEADER]
     i = 0
     bonus_lines = [
         'Eintausend,1000,F,0,0,0\n',
@@ -700,28 +692,27 @@ def write_numbers():
 
 
 def write_words():
-    write_nouns()
-    write_other()
-    write_numbers()
-    pass
+    write_words_to_file('Noun')
+    write_words_to_file('Misc')
+    # write_numbers()
 
 
 write_words()
 
-if __name__ == '__main__':
-    base_dir = './../Datenbank/Wörter/Nouns/'
-    other_files = [
-        './../Datenbank/Wörter/Other/Adjectives.csv',
-        './../Datenbank/Wörter/Other/Colour.csv',
-        './../Datenbank/Wörter/Other/Pronouns.csv',
-        './../Datenbank/Wörter/Other/CommonSayings.csv',
-        './../Datenbank/Wörter/Other/Conjunctions.csv',
-        './../Datenbank/Wörter/Other/Prepositions.csv',
-        './../Datenbank/Wörter/Other/Adverbs.csv',
-        './../Datenbank/Wörter/Other/MISC.csv',
-    ]
-
-    new_files = [base_dir + x for x in os.listdir(base_dir)] + other_files
-    old_files = ['./../Datenbank/master_word_bank.csv']
-    # old_files = ['./../Datenbank/Wörter/food.csv']
-    compare_datasets(old_files, new_files)
+# if __name__ == '__main__':
+#     base_dir = './../Datenbank/Wörter/Nouns/'
+#     other_files = [
+#         './../Datenbank/Wörter/Other/Adjectives.csv',
+#         './../Datenbank/Wörter/Other/Colour.csv',
+#         './../Datenbank/Wörter/Other/Pronouns.csv',
+#         './../Datenbank/Wörter/Other/CommonSayings.csv',
+#         './../Datenbank/Wörter/Other/Conjunctions.csv',
+#         './../Datenbank/Wörter/Other/Prepositions.csv',
+#         './../Datenbank/Wörter/Other/Adverbs.csv',
+#         './../Datenbank/Wörter/Other/MISC.csv',
+#     ]
+#
+#     new_files = [base_dir + x for x in os.listdir(base_dir)] + other_files
+#     old_files = ['./../Datenbank/master_word_bank.csv']
+#     # old_files = ['./../Datenbank/Wörter/food.csv']
+#     compare_datasets(old_files, new_files)
