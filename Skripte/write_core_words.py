@@ -95,7 +95,7 @@ noun_bank = {
         'Anzug.Suit.M',
         'Rock.Skirt.M',
         'Hemd.Shirt.N',
-        'T-Shirt|Tshirt.T-Shirt|Tshirt.N',
+        'T-shirt|Tshirt.T-shirt|Tshirt.N',
         'Hose.Pants.F',
         'Jeans.Jeans.F',
         'Shorts.Shorts.F',
@@ -392,7 +392,7 @@ noun_bank = {
     'Materials': [
         'Glas.Glass.N',
         'Metall.Metal.N',
-        'Kunststoff.Plastic.M',
+        'Plastik.Plastic.N',
         'Holz.Wood.N',
         'Stein.Stone.M',
         'Diamant.Diamond.M',
@@ -697,22 +697,22 @@ def write_words():
     # write_numbers()
 
 
-write_words()
+# write_words()
 
-# if __name__ == '__main__':
-#     base_dir = './../Datenbank/Wörter/Nouns/'
-#     other_files = [
-#         './../Datenbank/Wörter/Other/Adjectives.csv',
-#         './../Datenbank/Wörter/Other/Colour.csv',
-#         './../Datenbank/Wörter/Other/Pronouns.csv',
-#         './../Datenbank/Wörter/Other/CommonSayings.csv',
-#         './../Datenbank/Wörter/Other/Conjunctions.csv',
-#         './../Datenbank/Wörter/Other/Prepositions.csv',
-#         './../Datenbank/Wörter/Other/Adverbs.csv',
-#         './../Datenbank/Wörter/Other/MISC.csv',
-#     ]
-#
-#     new_files = [base_dir + x for x in os.listdir(base_dir)] + other_files
-#     old_files = ['./../Datenbank/master_word_bank.csv']
-#     # old_files = ['./../Datenbank/Wörter/food.csv']
-#     compare_datasets(old_files, new_files)
+if __name__ == '__main__':
+    base_dir = './../Datenbank/Wörter/Nouns/'
+    other_files = [
+        './../Datenbank/Wörter/Other/Adjectives.csv',
+        './../Datenbank/Wörter/Other/Colour.csv',
+        './../Datenbank/Wörter/Other/Pronouns.csv',
+        './../Datenbank/Wörter/Other/CommonSayings.csv',
+        './../Datenbank/Wörter/Other/Conjunctions.csv',
+        './../Datenbank/Wörter/Other/Prepositions.csv',
+        './../Datenbank/Wörter/Other/Adverbs.csv',
+        './../Datenbank/Wörter/Other/MISC.csv',
+    ]
+
+    new_files = [base_dir + x for x in os.listdir(base_dir)] + other_files
+    old_files = ['./../Datenbank/master_word_bank.csv']
+    # old_files = ['./../Datenbank/Wörter/food.csv']
+    compare_datasets(old_files, new_files)

@@ -24,7 +24,13 @@ word_files = [
     ('Sport', './../Datenbank/Wörter/Nouns/Sport.csv'),
     ('Time', './../Datenbank/Wörter/Nouns/Time.csv'),
     ('Transportation', './../Datenbank/Wörter/Nouns/Transportation.csv'),
-    ('Weather', './../Datenbank/Wörter/Nouns/Weather.csv')
+    ('Weather', './../Datenbank/Wörter/Nouns/Weather.csv'),
+    ('Adjectives', './../Datenbank/Wörter/Other/Adjectives.csv'),
+    ('Adverbs', './../Datenbank/Wörter/Other/Adverbs.csv'),
+    ('Colour', './../Datenbank/Wörter/Other/Colour.csv'),
+    ('CommonSayings', './../Datenbank/Wörter/Other/CommonSayings.csv'),
+    ('Conjunctions', './../Datenbank/Wörter/Other/Conjunctions.csv'),
+    ('Prepositions', './../Datenbank/Wörter/Other/Prepositions.csv'),
 ]
 
 

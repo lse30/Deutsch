@@ -7,10 +7,10 @@ Motor,Engine,M,1,5,1
 Roller,Scooter,M,1,2,0
 Bus,Bus,M,1,2,0
 Transport,Transportation,M,0,7,3
-Bahnticket,Train Ticket,N,0,3,1
 Schiff,Ship,N,0,7,3
-Auto,Car,N,0,0,0
 Motorrad,Motorbike|Motorcycle,N,0,3,1
 Benzin,Fuel|Petrol,N,0,3,2
-Boot,Boat,N,0,0,0
 Fahrrad,Bicycle|Bike,N,0,0,1
+Boot,Boat,N,1,2,0
+Auto,Car,N,1,2,0
+Bahnticket,Train Ticket,N,0,6,2

@@ -1,9 +1,7 @@
 German,English,Gender,Box,Passes,Fails
-Gehirn,Brain,N,0,0,0
 Hand,Hand,F,1,2,0
 Auge,Eye,N,1,5,1
 Finger,Finger,M,1,5,1
-Zeh,Toe,M,0,8,4
 Haar,Hair,N,1,5,1
 Bein,Leg,N,0,8,5
 Lippe,Lip,F,1,2,0
@@ -19,13 +17,15 @@ Knie,Knee,N,1,9,3
 Krankheit,Disease,F,1,6,2
 Stimme,Voice,F,0,8,4
 Hals,Neck,M,0,20,13
-Gesicht,Face,N,0,11,7
 Ohr,Ear,N,0,12,7
 Schulter,Shoulder,F,0,5,3
-Rücken,Back,M,0,13,7
 Haut,Skin,F,0,14,13
 Herz,Heart,N,0,4,2
 Zunge,Tongue,F,1,6,2
 Knochen,Bone,M,0,11,7
 Körper,Body,M,0,14,10
 Schweiß,Sweat,M,0,4,2
+Zeh,Toe,M,0,11,5
+Gehirn,Brain,N,0,5,3
+Gesicht,Face,N,0,18,10
+Rücken,Back,M,0,14,7

@@ -8,10 +8,10 @@ Guten Abend,Good Evening,,0,0,0
 Guten Nacht,Good Night,,0,0,0
 Entschuldigung,Sorry,,0,0,0
 Auf Wiedersehen,Goodbye,,0,0,0
-Ja,Yes,,0,0,0
 Nein,No,,0,0,0
-Ok,Ok,,0,0,0
 Prost,Cheers,,0,0,0
 Bitte,Please,,0,0,0
 Vielen Dank,Thank You Very Much,,0,0,0
 Kein Problem,No Problem,,0,0,0
+Ja,Yes,None,1,2,0
+Ok,Ok,None,1,2,0

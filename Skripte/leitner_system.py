@@ -43,9 +43,9 @@ class WordData:
         Box
             Current Word Level
         Passes
-            Recorded successes
+            Recorded Successes
         Failed
-            Recorded failures
+            Recorded Failures
         """
         data = line.replace('\n', '').split(',')
         german = data[0].split('|')
@@ -83,7 +83,7 @@ class WordData:
         :return: users answer, side_of_card
         """
         self.current_prompt = choice(self.next_prompt)
-        if self.gender:
+        if self.article:
             if self.current_prompt == 'g':
                 return f"{self.article} {self.german[0]}? "
             else:
@@ -254,8 +254,8 @@ class LeitnerSystem:
 
 
 if __name__ == '__main__':
-    file_path_1 = './../Datenbank/Wörter/Nouns/Animal.csv'
-    # file_path_2 = './../Datenbank/Wörter/Nouns/Months.csv'
+    # file_path_1 = './../Datenbank/Wörter/Other/Colour.csv'
+    file_path_1 = './../Datenbank/Wörter/Nouns/Months.csv'
 
     system = LeitnerSystem(file_path_1)
 
