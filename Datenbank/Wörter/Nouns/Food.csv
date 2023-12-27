@@ -17,11 +17,11 @@ Salat,Salad,M,1,5,1
 Tomate,Tomato,F,1,2,0
 Schweinefleisch,Pork,N,1,8,2
 Essen,Food,N,1,2,0
-Apfel,Apple,M,0,3,1
 Öl,Oil,N,1,2,0
 Mais,Corn,M,1,2,0
 Sandwich,Sandwich,N,1,3,0
 Salz,Salt,N,0,3,1
 Banane,Banana,F,1,5,1
-Kuchen,Cake,M,0,3,1
 Lamm,Lamb,N,1,5,1
+Apfel,Apple,M,1,5,1
+Kuchen,Cake,M,0,3,1

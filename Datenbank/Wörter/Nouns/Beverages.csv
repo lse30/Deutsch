@@ -1,5 +1,4 @@
 German,English,Gender,Box,Passes,Fails
-Espresso,Espresso,M,0,0,0
 Tee,Tea,M,1,2,0
 Trinken,Drink,N,1,2,0
 Wasser,Water,N,1,3,0
@@ -10,4 +9,5 @@ Mineralwasser,Mineral Water,N,1,2,0
 Bier,Beer,M,1,2,0
 Kaffee,Coffee,M,1,2,0
 Cappuccino,Cappuccino,M,1,5,1
-Saft,Juice,M,0,6,2
+Saft,Juice,M,1,8,2
+Espresso,Espresso,M,1,2,0

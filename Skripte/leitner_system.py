@@ -212,6 +212,7 @@ class LeitnerSystem:
             file_data += [x.word_to_line() for x in updated_words]
             write_file(file_data, file)
             print(f'Updated file {file}')
+        return promoted_words
 
     def test(self):
         while self.words_to_test_user:

@@ -14,11 +14,11 @@ Schauspieler,Actor,M,1,5,1
 Autor,Author(m),M,1,5,1
 Anwältin,Lawyer(f),F,1,9,3
 Ärztin,Doctor(f),F,1,2,0
-Polizist,Policeman,M,0,0,1
-Künstler,Artist(m),M,0,0,1
 Ingenieurin,Engineer(f),F,1,12,9
 Künstlerin,Artist(f),F,1,6,2
-Polizistin,Policewoman,F,0,3,1
 Ingenieur,Engineer(m),M,1,7,5
-Arbeit,Job,F,0,7,3
-Schauspielerin,Actress,F,0,5,2
+Polizist,Policeman,M,1,2,1
+Schauspielerin,Actress,F,1,7,2
+Arbeit,Job,F,1,9,3
+Polizistin,Policewoman,F,0,6,2
+Künstler,Artist(m),M,1,5,2

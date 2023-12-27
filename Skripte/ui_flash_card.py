@@ -341,13 +341,14 @@ class FlashCard:
             self.counter.config(text=self.system.get_counter())
             self.play_word()
         else:
+
+            self.counter.config(text=self.system.get_counter())
+            promoted = self.system.update_words()
             self.flash_card.config(
-                text="END OF WORDLIST",
+                text=f"END OF WORDLIST - {promoted} words promoted",
                 bg=self.style.success_green,
                 fg=self.style.on_background
             )
-            self.counter.config(text=self.system.get_counter())
-            self.system.update_words()
             self.system = None
 
     def end_session(self):
@@ -355,6 +356,7 @@ class FlashCard:
             self.system.update_words()
             self.flash_card.config(text="Press Start", bg=self.style.surface, fg=self.style.on_background)
             self.system = None
+        self.root.destroy()
 
     def on_entry_submit(self, _args):
         answer = self.entry_box.get()

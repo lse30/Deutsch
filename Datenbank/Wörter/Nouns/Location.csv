@@ -1,9 +1,6 @@
 German,English,Gender,Box,Passes,Fails
-Kino,Movie Theatre|Theatre,N,0,0,0
 Zoo,Zoo,M,1,2,0
 Klub,Club,M,1,2,0
-Bahnhof,Train Station,M,0,1,1
-Lager,Camp,N,0,1,2
 Land,Country,N,1,2,0
 Apartment,Apartment,N,1,2,0
 Weltraum,Outer Space|Space,M,0,6,4
@@ -12,7 +9,6 @@ Haus,House,N,1,2,0
 Marktplatz,Marketplace,M,1,2,0
 Zimmer,Room,N,1,2,0
 Bibliothek,Library,F,1,2,0
-Stadt,City|Town,F,0,0,0
 Park,Park,M,1,2,0
 Supermarkt,Supermarket,M,1,2,0
 Bar,Bar,F,1,2,0
@@ -25,15 +21,19 @@ Einkaufszentrum,Mall,N,0,11,7
 Universität,University,F,1,6,1
 Apotheke,Pharmacy,F,1,2,0
 Markt,Market,M,1,2,0
-Krankenhaus,Hospital,N,0,7,3
-Flughafen,Airport,M,0,9,7
-Gericht,Court,N,0,5,3
 Hotel,Hotel,N,1,2,0
-Straße,Street|Road,F,0,0,0
 Schule,School,F,1,5,1
-Hafen,Port,M,0,6,2
-Bäckerei,Bakery,F,0,0,0
 Polizeistation,Police Station,F,1,6,2
 Büro,Office,N,0,1,2
-Geschäft,Shop,N,0,18,13
-Bauernhof,Farm,M,0,6,4
+Flughafen,Airport,M,1,11,7
+Bäckerei,Bakery,F,1,2,0
+Straße,Street|Road,F,1,2,0
+Krankenhaus,Hospital,N,1,9,3
+Stadt,City|Town,F,1,2,0
+Geschäft,Shop,N,0,25,16
+Hafen,Port,M,1,8,2
+Bauernhof,Farm,M,0,12,6
+Bahnhof,Train Station,M,1,3,1
+Kino,Movie Theatre|Theatre,N,1,2,0
+Gericht,Court,N,1,10,4
+Lager,Camp,N,0,1,2

@@ -1,4 +1,4 @@
 German,English,Gender,Box,Passes,Fails
-Für,For,,0,0,0
-Zu,To,,0,0,0
-Mit,With,,0,0,0
+Mit,With,None,1,2,0
+Für,For,None,1,2,0
+Zu,To,None,1,2,0
