@@ -2,7 +2,6 @@ German,English,Gender,Box,Passes,Fails
 Nachmittag,Afternoon,M,1,2,0
 Sekunde,Second,F,1,2,0
 Tag,Day,M,1,2,0
-Wochentag,Weekday,M,1,2,0
 Zeit,Time,F,1,6,1
 Minute,Minute,F,1,2,0
 Morgen,Morning,M,1,2,0
@@ -13,4 +12,5 @@ Woche,Week,F,1,11,3
 Wochenende,Weekend,N,1,15,5
 Heute,Today,N,1,8,5
 Jahr,Year,N,1,12,4
-Stunde,Hour,F,1,13,7
+Stunde,Hour,F,2,15,7
+Wochentag,Weekday,M,3,6,0

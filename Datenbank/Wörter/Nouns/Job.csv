@@ -1,7 +1,6 @@
 German,English,Gender,Box,Passes,Fails
 Lehrerin,Teacher(f),F,1,2,0
 Studentin,Student(f),F,1,2,0
-Professor,Professor(m),M,1,2,0
 Arzt,Doctor(m),M,1,2,0
 Professorin,Professor(f),F,1,2,0
 Lehrer,Teacher(m),M,1,2,0
@@ -15,10 +14,11 @@ Autor,Author(m),M,1,5,1
 Anwältin,Lawyer(f),F,1,9,3
 Ärztin,Doctor(f),F,1,2,0
 Ingenieurin,Engineer(f),F,1,12,9
-Künstlerin,Artist(f),F,1,6,2
 Ingenieur,Engineer(m),M,1,7,5
 Polizist,Policeman,M,1,2,1
 Schauspielerin,Actress,F,1,7,2
 Arbeit,Job,F,1,9,3
-Künstler,Artist(m),M,1,5,2
 Polizistin,Policewoman,F,1,11,3
+Künstlerin,Artist(f),F,3,10,2
+Professor,Professor(m),M,4,8,0
+Künstler,Artist(m),M,1,8,3

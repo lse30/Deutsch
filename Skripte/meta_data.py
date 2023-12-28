@@ -1,3 +1,4 @@
+
 word_files = [
     ('Animal', './../Datenbank/Wörter/Nouns/Animal.csv'),
     ('Beverages', './../Datenbank/Wörter/Nouns/Beverages.csv'),
@@ -27,3 +28,4 @@ word_files = [
     ('Conjunctions', './../Datenbank/Wörter/Other/Conjunctions.csv'),
     ('Prepositions', './../Datenbank/Wörter/Other/Prepositions.csv'),
 ]
+

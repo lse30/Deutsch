@@ -1,7 +1,6 @@
 German,English,Gender,Box,Passes,Fails
 Lastwagen,Truck,M,1,2,0
 Van,Van,M,1,2,0
-Motor,Engine,M,1,5,1
 Roller,Scooter,M,1,2,0
 Bus,Bus,M,1,2,0
 Boot,Boat,N,1,2,0
@@ -9,8 +8,9 @@ Auto,Car,N,1,2,0
 Fahrrad,Bicycle|Bike,N,1,2,1
 Motorrad,Motorbike|Motorcycle,N,1,5,1
 Transport,Transportation,M,1,9,3
-Zug,Train,M,1,2,0
 Bahnticket,Train Ticket,N,1,8,2
 Benzin,Fuel|Petrol,N,1,8,3
 Schiff,Ship,N,1,15,5
 Flugzeug,Plane|Aeroplane|Airplane,N,1,11,5
+Motor,Engine,M,4,11,1
+Zug,Train,M,3,6,0

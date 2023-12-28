@@ -5,9 +5,9 @@ Lampe,Lamp,F,1,2,0
 Kamera,Camera,F,1,5,1
 Laptop,Laptop,M,1,5,1
 Computer,Computer,M,1,2,0
-Radio,Radio,N,1,2,0
-Programm,Program,N,1,2,1
 Uhr,Clock,F,1,10,4
 Handy,Cellphone|Phone,N,1,2,0
 Bildschirm,Screen,M,1,20,12
-Fernsehen,Television|TV,N,1,15,7
+Radio,Radio,N,4,8,0
+Programm,Program,N,2,4,1
+Fernsehen,Television|TV,N,1,18,8

@@ -1,7 +1,6 @@
 German,English,Gender,Box,Passes,Fails
 November,November,M,1,2,0
 Mai,May,M,1,2,0
-März,March,M,1,3,0
 April,April,M,1,2,0
 Januar,January,M,1,2,0
 September,September,M,1,2,0
@@ -9,5 +8,6 @@ Oktober,October,M,1,2,0
 Dezember,December,M,1,6,1
 August,August,M,1,4,0
 Juni,June,M,1,2,0
-Februar,February,M,1,5,1
 Juli,July,M,1,3,0
+Februar,February,M,2,7,1
+März,March,M,2,5,0

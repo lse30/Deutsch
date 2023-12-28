@@ -2,14 +2,37 @@ from core_scripts import read_file, write_file, create_logger
 from random import shuffle, choice
 from typing import Dict, List, Optional, Tuple
 from text_to_speech import play_sound
+from meta_data import word_files
+import math
 
-TEST_MODE = True
+
+TEST_MODE = False
 article_redundant_nouns = ['Countries', 'DaysOfWeek', 'Months']
-MAX_WORDS = 3
+MAX_WORDS = 20
+TARGET_RATIO = (60, 30, 10)
 
 logger = create_logger(__name__)
 
+
 # TODO have better system for non gender important words or double spellings based on gender
+def hamilton_apportionment(total_words, ratio):
+    total_ratio = sum(ratio)
+    quotas = [total_words * (ratio[i] / total_ratio) for i in range(len(ratio))]
+
+    # Assign the integer part of the quota to each state
+    assigned_words = [math.floor(q) for q in quotas]
+
+    # Calculate the remaining seats
+    remaining_words = total_words - sum(assigned_words)
+
+    # Allocate the remaining seats to states with the largest remainders
+    remainder_with_index = [(q - math.floor(q), i) for i, q in enumerate(quotas)]
+    remainder_with_index.sort(reverse=True)
+
+    for i in range(remaining_words):
+        assigned_words[remainder_with_index[i][1]] += 1
+
+    return tuple(assigned_words)
 
 
 class WordData:
@@ -52,7 +75,7 @@ class WordData:
         english = data[1].split('|')
 
         gender = data[2]
-        if gender in ['M', 'F',  'N', 'V']:
+        if gender in ['M', 'F', 'N', 'V']:
             if self.category in article_redundant_nouns:
                 article = None
             else:
@@ -157,23 +180,36 @@ class WordData:
 class LeitnerSystem:
     def __init__(self, *filepaths: str):
         self.filepaths: Tuple[str] = filepaths
-        self.boxes: Dict[str, List[WordData]] = self.prepare_words()
-
         self.words_to_test_user: List[WordData] = self.get_test_words()
         self.total_words = len(self.words_to_test_user)
         self.completed_words: List[WordData] = []
         self.current_word: Optional[WordData] = None
 
     def get_test_words(self):
-        current_box: int = min([int(x) for x in self.boxes.keys()])
+        boxes = self.prepare_words()
+        output = []
+        if '0' in boxes:
+            # untested words in the list so add all
+            output = boxes['0'][:MAX_WORDS]
+        if len(output) < MAX_WORDS:
+            ratio = hamilton_apportionment(MAX_WORDS - len(output), TARGET_RATIO)
+            print(ratio)
+            sorted_box_keys = sorted(boxes.keys(), key=lambda x: int(x))
+            keys_to_get = sorted_box_keys.copy()
+            if '0' in keys_to_get:
+                keys_to_get.remove('0')
+            sorted_boxes = keys_to_get[:len(ratio)]
+            for i, key in enumerate(sorted_boxes):
+                output += boxes[key][:ratio[i]]
+        else:
+            return output
 
-        print(f"{len(self.boxes[str(current_box)])} possible words in word set")
-        word_set = self.boxes[str(current_box)][:MAX_WORDS]
-        if len(word_set) < MAX_WORDS:
-            if str(current_box + 1) in self.boxes:
-                word_set = word_set + self.boxes[str(current_box + 1)]
-                word_set = word_set[:MAX_WORDS]
-        return word_set
+        if len(output) < MAX_WORDS:
+            all_remaining_words = []
+            for j in sorted_box_keys:
+                all_remaining_words += [x for x in boxes[j] if x not in output]
+            output += all_remaining_words[:MAX_WORDS - len(output)]
+        return output
 
     def prepare_words(self) -> Dict[str, List[WordData]]:
         """
@@ -254,8 +290,8 @@ class LeitnerSystem:
 if __name__ == '__main__':
     # file_path_1 = './../Datenbank/Wörter/Other/Colour.csv'
     file_path_1 = './../Datenbank/Wörter/Nouns/Animal.csv'
-
-    system = LeitnerSystem(file_path_1)
+    all_files = [x[1] for x in word_files]
+    system = LeitnerSystem(*all_files)
 
     # first_word = system.words_to_test_user[0]
     # system.serve_word()

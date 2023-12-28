@@ -1,10 +1,10 @@
 German,English,Gender,Box,Passes,Fails
-Holz,Wood,N,1,8,4
 Glas,Glass,N,1,5,1
 Silber,Silver,N,1,8,2
 Gold,Gold,N,1,2,0
 Metall,Metal,N,1,8,2
-Stein,Stone,M,1,2,0
 Diamant,Diamond,M,1,6,2
 Plastik,Plastic,N,1,2,0
 Kupfer,Copper,N,1,17,8
+Holz,Wood,N,1,13,7
+Stein,Stone,M,2,4,0
