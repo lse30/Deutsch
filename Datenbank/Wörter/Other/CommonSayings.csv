@@ -1,12 +1,6 @@
 German,English,Gender,Box,Passes,Fails
-Danke,Thank You,,0,0,0
-Guten Abend,Good Evening,,0,0,0
-Prost,Cheers,,0,0,0
-Vielen Dank,Thank You Very Much,,0,0,0
-Kein Problem,No Problem,,0,0,0
 Ja,Yes,None,1,2,0
 Ok,Ok,None,1,2,0
-Guten Nacht,Good Night,None,0,3,1
 Nein,No,None,1,2,0
 Hallo,Hello,None,1,2,0
 Guten Morgen,Good Morning,None,1,2,0
@@ -15,3 +9,9 @@ Bitte,Please,None,1,2,0
 Entschuldigung,Sorry,None,1,2,0
 Auf Wiedersehen,Goodbye,None,1,5,1
 Guten Tag,Good Day,None,1,2,0
+Guten Abend,Good Evening,None,1,6,2
+Vielen Dank,Thank You Very Much,None,1,2,0
+Kein Problem,No Problem,None,1,2,0
+Prost,Cheers,None,1,2,0
+Danke,Thank You,None,1,2,0
+Guten Nacht,Good Night,None,1,5,1

@@ -1,6 +1,5 @@
 German,English,Gender,Box,Passes,Fails
 Fleck,Stain,M,1,2,0
-Pullover,Sweater,M,1,2,0
 Rock,Skirt,M,1,2,0
 Jeans,Jeans,F,1,2,0
 Hose,Pants,F,1,2,0
@@ -9,11 +8,12 @@ Shorts,Shorts,F,1,2,0
 Socken,Socks,F,1,7,5
 T-shirt|Tshirt,T-shirt|Tshirt,N,1,5,1
 Schuhe,Shoes,F,1,9,4
-Mantel,Coat,M,0,11,7
-Schal,Scarf,M,0,5,3
 Kleid,Dress,N,1,11,4
 Hemd,Shirt,N,1,6,1
-Gürtel,Belt,M,0,16,13
 Hut,Hat,M,1,6,2
-Anzug,Suit,M,0,5,2
-Tasche,Pocket,F,0,3,3
+Gürtel,Belt,M,1,18,13
+Anzug,Suit,M,1,7,2
+Mantel,Coat,M,1,16,8
+Schal,Scarf,M,1,16,8
+Tasche,Pocket,F,1,5,3
+Pullover,Sweater,M,1,3,0

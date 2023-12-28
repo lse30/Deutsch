@@ -212,7 +212,7 @@ noun_bank = {
         'Mädchen.Girl.N',
         'Kind.Child.N',
         'Erwachsene.Adult.M',
-        'Nachbar.Neighbor.M',
+        'Nachbar.Neighbour|Neighbor.M',
         'Person.Person.F',
         'Mensch.Human.M',
         'Onkel.Uncle.M',

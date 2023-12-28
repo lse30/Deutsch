@@ -6,6 +6,6 @@ Circa,Approximately,None,1,2,0
 Jetzt,Now,None,1,2,0
 Was,What,None,1,2,0
 Warum,Why,None,1,2,0
-Dort,There,None,0,3,1
-Wirklich,Really,None,0,3,1
-Hier,Here,None,0,0,0
+Wirklich,Really,None,1,5,1
+Hier,Here,None,1,5,1
+Dort,There,None,1,8,2

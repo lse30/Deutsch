@@ -3,9 +3,9 @@ from random import shuffle, choice
 from typing import Dict, List, Optional, Tuple
 from text_to_speech import play_sound
 
-TEST_MODE = False
+TEST_MODE = True
 article_redundant_nouns = ['Countries', 'DaysOfWeek', 'Months']
-MAX_WORDS = 20
+MAX_WORDS = 3
 
 logger = create_logger(__name__)
 
@@ -139,9 +139,6 @@ class WordData:
             logger.debug('Correct!')
             self.passes += 1
             self.next_prompt.remove(self.current_prompt)
-            if not self.next_prompt:
-                self.box += 1
-                self.next_prompt = ['g', 'e']
         else:
             logger.debug("That's not quite right")
             self.fails += 1
@@ -161,7 +158,6 @@ class LeitnerSystem:
     def __init__(self, *filepaths: str):
         self.filepaths: Tuple[str] = filepaths
         self.boxes: Dict[str, List[WordData]] = self.prepare_words()
-        self.current_box: int = min([int(x) for x in self.boxes.keys()])
 
         self.words_to_test_user: List[WordData] = self.get_test_words()
         self.total_words = len(self.words_to_test_user)
@@ -169,11 +165,13 @@ class LeitnerSystem:
         self.current_word: Optional[WordData] = None
 
     def get_test_words(self):
-        print(f"{len(self.boxes[str(self.current_box)])} possible words in word set")
-        word_set = self.boxes[str(self.current_box)][:MAX_WORDS]
+        current_box: int = min([int(x) for x in self.boxes.keys()])
+
+        print(f"{len(self.boxes[str(current_box)])} possible words in word set")
+        word_set = self.boxes[str(current_box)][:MAX_WORDS]
         if len(word_set) < MAX_WORDS:
-            if str(self.current_box + 1) in self.boxes:
-                word_set = word_set + self.boxes[str(self.current_box + 1)]
+            if str(current_box + 1) in self.boxes:
+                word_set = word_set + self.boxes[str(current_box + 1)]
                 word_set = word_set[:MAX_WORDS]
         return word_set
 
@@ -197,9 +195,8 @@ class LeitnerSystem:
         sorted_words = {}
         promoted_words = 0
         for word in self.completed_words:
-            if word.fails_this_session != 0:
-                word.box -= 1
-            else:
+            if word.fails_this_session == 0 and word.next_prompt == []:
+                word.box += 1
                 promoted_words += 1
             sorted_words.setdefault(word.file_name, []).append(word)
 
@@ -231,7 +228,7 @@ class LeitnerSystem:
 
     def submit_answer(self, answer: str) -> bool:
         result = self.current_word.assess_answer(answer)
-        if self.current_box == self.current_word.box:
+        if self.current_word.next_prompt:
             self.words_to_test_user.append(self.current_word)
         else:
             self.completed_words.append(self.current_word)
@@ -256,7 +253,7 @@ class LeitnerSystem:
 
 if __name__ == '__main__':
     # file_path_1 = './../Datenbank/Wörter/Other/Colour.csv'
-    file_path_1 = './../Datenbank/Wörter/Nouns/Months.csv'
+    file_path_1 = './../Datenbank/Wörter/Nouns/Animal.csv'
 
     system = LeitnerSystem(file_path_1)
 

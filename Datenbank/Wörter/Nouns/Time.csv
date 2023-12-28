@@ -9,8 +9,8 @@ Morgen,Morning,M,1,2,0
 Abend,Evening,M,1,6,2
 Nacht,Night,F,1,8,2
 Monat,Month,M,1,5,1
-Jahr,Year,N,0,7,3
 Woche,Week,F,1,11,3
-Wochenende,Weekend,N,0,13,5
-Stunde,Hour,F,0,11,7
-Heute,Today,N,0,0,1
+Wochenende,Weekend,N,1,15,5
+Heute,Today,N,1,8,5
+Jahr,Year,N,1,12,4
+Stunde,Hour,F,1,13,7

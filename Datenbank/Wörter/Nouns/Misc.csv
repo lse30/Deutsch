@@ -1,8 +1,8 @@
 German,English,Gender,Box,Passes,Fails
 Euro,Euro,M,1,5,1
-Geld,Money,N,1,2,0
-Bild,Image,N,0,3,1
 Karte,Map,F,1,2,0
 Sonnencreme,Suncream|Sunscreen,F,1,9,3
 Klang,Sound,M,1,10,4
 Geldautomat,Atm,M,1,8,2
+Bild,Image,N,1,8,2
+Geld,Money,N,1,3,0

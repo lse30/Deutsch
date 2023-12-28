@@ -9,10 +9,8 @@ Tisch,Table,M,1,2,0
 Schlafzimmer,Bedroom,N,1,5,2
 Fenster,Window,N,1,6,2
 Schreibtisch,Desk,M,1,14,8
-Stuhl,Chair,M,0,5,3
 Pool,Pool,M,1,2,0
 Boden,Floor,M,1,10,5
-Dusche,Shower,F,0,0,0
 Teppich,Carpet,M,1,2,0
 Bleistift,Pencil,M,1,16,13
 Tür,Door,F,1,9,3
@@ -22,8 +20,10 @@ Bett,Bed,N,1,9,2
 Toilette,Toilet,F,1,8,2
 Tasche,Bag,F,1,12,4
 Schlüssel,Key,M,1,7,3
-Schloss,Lock,N,0,13,7
 Werkzeug,Tool,N,1,11,5
-Seite,Page,F,0,20,10
-Mauer,Wall,F,0,3,1
-Kiste,Box,F,0,5,6
+Mauer,Wall,F,1,5,1
+Dusche,Shower,F,1,6,2
+Seite,Page,F,1,22,10
+Schloss,Lock,N,1,21,9
+Stuhl,Chair,M,1,11,5
+Kiste,Box,F,1,10,7

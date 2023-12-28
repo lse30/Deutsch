@@ -3,7 +3,6 @@ Zoo,Zoo,M,1,2,0
 Klub,Club,M,1,2,0
 Land,Country,N,1,2,0
 Apartment,Apartment,N,1,2,0
-Weltraum,Outer Space|Space,M,0,6,4
 Bank,Bank,F,1,2,0
 Haus,House,N,1,2,0
 Marktplatz,Marketplace,M,1,2,0
@@ -17,23 +16,24 @@ Restaurant,Restaurant,N,1,2,0
 Cafe,Cafe,N,1,2,0
 Brücke,Bridge,F,1,6,2
 Kirche,Church,F,1,2,0
-Einkaufszentrum,Mall,N,0,11,7
 Universität,University,F,1,6,1
 Apotheke,Pharmacy,F,1,2,0
 Markt,Market,M,1,2,0
 Hotel,Hotel,N,1,2,0
 Schule,School,F,1,5,1
 Polizeistation,Police Station,F,1,6,2
-Büro,Office,N,0,1,2
 Flughafen,Airport,M,1,11,7
 Bäckerei,Bakery,F,1,2,0
 Straße,Street|Road,F,1,2,0
 Krankenhaus,Hospital,N,1,9,3
 Stadt,City|Town,F,1,2,0
-Geschäft,Shop,N,0,25,16
 Hafen,Port,M,1,8,2
-Bauernhof,Farm,M,0,12,6
 Bahnhof,Train Station,M,1,3,1
 Kino,Movie Theatre|Theatre,N,1,2,0
 Gericht,Court,N,1,10,4
-Lager,Camp,N,0,1,2
+Weltraum,Outer Space|Space,M,1,12,6
+Lager,Camp,N,1,6,3
+Geschäft,Shop,N,1,30,17
+Einkaufszentrum,Mall,N,1,16,8
+Bauernhof,Farm,M,1,14,6
+Büro,Office,N,1,6,3
