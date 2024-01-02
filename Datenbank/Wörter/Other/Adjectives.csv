@@ -2,8 +2,6 @@ German,English,Gender,Box,Passes,Fails
 Laut,Loud,None,1,2,0
 Neu,New,None,1,2,0
 Heiß,Hot,None,1,2,0
-Kalt,Cold,None,1,2,0
-Hässlich,Ugly,None,1,5,1
 Lang,Long,None,1,8,2
 Frei,Free,None,1,2,0
 Teuer,Expensive,None,1,6,2
@@ -26,13 +24,11 @@ Taub,Deaf,None,1,7,3
 Toll|Super,Great,None,1,5,1
 Licht,Light,None,1,2,0
 Dunkel,Dark,None,1,5,1
-Süß,Sweet,None,1,5,1
 Hell,Bright,None,1,2,0
 Hoch,High,None,1,5,2
 Krank,Sick,None,1,9,3
 Ruhig,Quiet,None,1,12,6
 Nett,Nice,None,1,5,1
-Gut,Good,None,1,2,0
 Blind,Blind,None,1,5,1
 Niedrig,Low,None,1,9,5
 Arm,Poor,None,1,12,4
@@ -51,7 +47,6 @@ Traurig,Sad,None,1,10,4
 Schwach,Weak,None,1,17,6
 Hart,Hard,None,1,5,1
 Tief,Deep,None,1,12,6
-Jung,Young,None,1,4,0
 Breit,Wide,None,1,9,3
 Schnell,Fast,None,1,8,2
 Nervös,Nervous,None,3,12,2
@@ -59,9 +54,14 @@ Glücklich,Happy,None,1,13,5
 groß,Tall|Big|Large,None,3,6,0
 Stark,Strong,None,2,7,1
 Warm,Warm,None,4,9,0
-Perfekt,Perfect,None,3,6,0
 Weich,Soft,None,2,12,4
 Reich,Rich,None,3,12,2
 Klein,Small,None,2,4,0
 Alt,Old,None,3,6,0
-Gesund,Healthy,None,3,19,7
+Kalt,Cold,None,2,4,0
+Gut,Good,None,2,4,0
+Jung,Young,None,2,6,0
+Gesund,Healthy,None,3,22,8
+Perfekt,Perfect,None,3,6,0
+Süß,Sweet,None,1,5,1
+Hässlich,Ugly,None,1,5,1

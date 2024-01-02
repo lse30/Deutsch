@@ -7,11 +7,11 @@ Guten Nachmittag,Good Afternoon,None,1,2,0
 Bitte,Please,None,1,2,0
 Entschuldigung,Sorry,None,1,2,0
 Auf Wiedersehen,Goodbye,None,1,5,1
-Guten Tag,Good Day,None,1,2,0
 Kein Problem,No Problem,None,1,2,0
 Prost,Cheers,None,1,2,0
 Danke,Thank You,None,1,2,0
 Guten Nacht,Good Night,None,1,5,1
-Vielen Dank,Thank You Very Much,None,1,5,1
 Nein,No,None,4,8,0
 Guten Abend,Good Evening,None,2,8,2
+Guten Tag,Good Day,None,2,4,0
+Vielen Dank,Thank You Very Much,None,1,5,1

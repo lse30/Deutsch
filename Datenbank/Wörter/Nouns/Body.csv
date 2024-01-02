@@ -23,9 +23,9 @@ Schulter,Shoulder,F,1,10,4
 Hals,Neck,M,1,28,15
 Bein,Leg,N,1,13,6
 Gehirn,Brain,N,1,14,6
-Haar,Hair,N,2,7,1
-Auge,Eye,N,1,8,2
-Rücken,Back,M,3,23,8
 Krankheit,Disease,F,2,8,2
 Fuß,Foot,M,2,4,0
 Herz,Heart,N,4,19,7
+Auge,Eye,N,2,10,2
+Rücken,Back,M,4,25,8
+Haar,Hair,N,2,10,2

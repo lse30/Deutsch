@@ -1,5 +1,5 @@
 German,English,Gender,Box,Passes,Fails
-Winter,Winter,M,1,2,0
 Sommer,Summer,M,1,2,0
 Frühling,Spring,M,1,5,1
-Herbst,Autumn,M,3,13,3
+Herbst,Autumn,M,4,15,3
+Winter,Winter,M,2,4,0
