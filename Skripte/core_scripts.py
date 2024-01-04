@@ -108,9 +108,9 @@ def analyse_phrase_book():
 
 
 def compare_datasets(set_a, set_b):
-    set_a_data = set([x.split(',')[0] for file in set_a for x in read_file(file)[1:]])
-    set_b_data = set([x.split(',')[0] for file in set_b for x in read_file(file)[1:]])
-    numbers = set([x.split(',')[0] for x in read_file('./../Datenbank/Wörter/Other/Numbers.csv')[1:]])
+    set_a_data = set([x.split(',')[0].lower() for file in set_a for x in read_file(file)[1:]])
+    set_b_data = set([x.split(',')[0].lower() for file in set_b for x in read_file(file)[1:]])
+    numbers = set([x.split(',')[0].lower() for x in read_file('./../Datenbank/Wörter/Other/Numbers.csv')[1:]])
     set_a_data -= numbers
 
     missing_words = set_a_data - set_b_data

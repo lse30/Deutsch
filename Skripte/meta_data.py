@@ -28,4 +28,3 @@ word_files = [
     ('Conjunctions', './../Datenbank/Wörter/Other/Conjunctions.csv'),
     ('Prepositions', './../Datenbank/Wörter/Other/Prepositions.csv'),
 ]
-

@@ -37,3 +37,5 @@ Bank,Bank,F,1,6,2
 Bahnhof,Train Station,M,1,3,1
 Einkaufszentrum,Mall,N,1,16,8
 Geschäft,Shop,N,2,32,17
+Stadtzentrum,City Centre|City Center,N,0,0,0
+Konzert,Concert,N,1,2,0

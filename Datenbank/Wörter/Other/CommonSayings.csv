@@ -5,7 +5,7 @@ Hallo,Hello,None,1,2,0
 Guten Morgen,Good Morning,None,1,2,0
 Guten Nachmittag,Good Afternoon,None,1,2,0
 Bitte,Please,None,1,2,0
-Entschuldigung,Sorry,None,1,2,0
+Entschuldigung,Excuse Me|Sorry,None,1,2,0
 Auf Wiedersehen,Goodbye,None,1,5,1
 Kein Problem,No Problem,None,1,2,0
 Prost,Cheers,None,1,2,0
@@ -15,3 +15,5 @@ Nein,No,None,4,8,0
 Guten Abend,Good Evening,None,2,8,2
 Guten Tag,Good Day,None,2,4,0
 Vielen Dank,Thank You Very Much,None,1,5,1
+Es Tut Mir Leid,I Am Sorry|Sorry|Im Sorry,,0,0,0
+Tschüss,Bye|Goodbye,None,1,2,0

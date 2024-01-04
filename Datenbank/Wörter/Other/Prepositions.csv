@@ -2,3 +2,18 @@ German,English,Gender,Box,Passes,Fails
 Mit,With,None,1,2,0
 Für,For,None,1,2,0
 Zu,To,None,1,2,0
+Durch,Through,,0,0,0
+Ohne,Without,,0,0,0
+Um,Round|Around,,0,0,0
+Wider,Against|Contrary To,,0,0,0
+Hinter,Behind,,0,0,0
+In,In,,0,0,0
+Über,Over|Across|Above,,0,0,0
+Vor,In Front Of|Before,,0,0,0
+Zwischen,Between,,0,0,0
+Unter,Under|Among,None,1,2,0
+Gegen,Against|Around,None,0,3,1
+Neben,Next To|Besides,None,0,3,1
+Entlang,Along,None,0,3,1
+Auf,On|To|At,None,0,3,1
+An,At,None,0,3,1

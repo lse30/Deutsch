@@ -89,6 +89,7 @@ noun_bank = {
         'Bank.Bank.F',
         'Museum.Museum.N',
         'Apotheke.Pharmacy.F',
+        'Stadtzentrum.City Centre|City Center.N'
     ],
     'Clothing': [
         'Hut.Hat.M',
@@ -389,7 +390,33 @@ noun_bank = {
         'Mond.Moon.M',
         'Regen.Rain.M',
         'Schnee.Snow.M',
-        'Wolke.Cloud.F'
+        'Wolke.Cloud.F',
+        'Meer.Sea.N',
+        'Ozean.Ocean.M',
+        'Fluss.River.M',
+        'Berg.Mountain.M',
+        'Baum.Tree.M',
+        'Welt.World.F',
+        'Erde.Earth.F',
+        'Wald.Forest.M',
+        'Himmel.Sky.M',
+        'Pflanze.Plant.F',
+        'Wind.Wind.M',
+        'Boden.Soil.M',
+        'Blume.Flower.F',
+        'Tal.Valley.N',
+        'See.Lake.M',
+        'Stern.Star.M',
+        'Gras.Grass.N',
+        'Blatt.Leaf.N',
+        'Luft.Air.F',
+        'Sand.Sand.M',
+        'Strand.Beach.M',
+        'Welle.Wave.F',
+        'Feuer.Fire.N',
+        'Eis.Ice.N',
+        'Insel.Island.F',
+        'Hügel.Hill.M'
     ],
     'Materials': [
         'Glas.Glass.N',
@@ -422,6 +449,7 @@ noun_bank = {
         'Geld.Money.N',
         'Geldautomat.ATM.M',
         'Euro.Euro.M',
+        'Rechnung.Check.F'
     ],
 }
 
@@ -531,8 +559,10 @@ misc_bank = {
         'Guten Nachmittag.Good Afternoon',
         'Guten Abend.Good Evening',
         'Guten Nacht.Good Night',
-        'Entschuldigung.Sorry',
+        'Entschuldigung.Excuse Me|Sorry',
+        'Es Tut Mir Leid.I Am Sorry|Sorry|Im Sorry',
         'Auf Wiedersehen.Goodbye',
+        'Tschüss.Bye|Goodbye',
         'Ja.Yes',
         'Nein.No',
         'Ok.Ok',
@@ -552,8 +582,23 @@ misc_bank = {
     ],
     'Prepositions': [
         'Für.For',
+        'Durch.Through',
+        'Entlang.Along',
+        'Gegen.Against|Around',
+        'Ohne.Without',
+        'Um.Round|Around',
+        'Wider.Against|Contrary To',
         'Zu.To',
-        'Mit.With'
+        'Mit.With',
+        'An.At',
+        'Auf.On|To|At',
+        'Hinter.Behind',
+        'In.In',
+        'Neben.Next To|Besides',
+        'Über.Over|Across|Above',
+        'Unter.Under|Among',
+        'Vor.In Front Of|Before',
+        'Zwischen.Between'
     ],
     'Adverbs': [
         'Sehr.Very',
@@ -566,6 +611,8 @@ misc_bank = {
         'Jetzt.Now',
         'Wirklich.Really',
         'Circa.Approximately',
+        'Links.Left|To The Left',
+        'Rechts.Right|To The Right'
     ],
     'MISC': [
         'Der.The(m)',
@@ -699,7 +746,7 @@ def write_words():
     # write_numbers()
 
 
-# write_words()
+write_words()
 
 if __name__ == '__main__':
     base_dir = './../Datenbank/Wörter/Nouns/'
