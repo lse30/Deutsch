@@ -2,18 +2,10 @@ import os
 from core_scripts import read_file, write_file, compare_datasets
 from meta_data import noun_bank, misc_bank
 
-"""
-Nature: sea*, ocean*, river, mountain, rain, snow, tree, sun, moon, world, Earth, forest, sky, plant, wind, soil/earth, 
-flower, valley, root, lake, star, grass, leaf, air, sand, beach, wave, fire, ice, island, hill, heat, natureC
-
-Math/Measurements: meter, centimeter, kilogram, inch, foot, pound, half, circle, square, temperature, date, weight, 
-edge,corner
-"""
-
 CSV_HEADER = 'German,English,Gender,Box,Passes,Fails\n'
 NOUN_PATH = './../Datenbank/Wörter/Nouns/'
 MISC_PATH = './../Datenbank/Wörter/Other/'
-LETTERS = 'üäßö'
+
 
 number_cache_ger = {
     '0': 'Null',

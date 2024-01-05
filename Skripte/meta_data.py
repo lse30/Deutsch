@@ -28,9 +28,14 @@ word_files = [
     ('Prepositions', './../Datenbank/Wörter/Other/Prepositions.csv'),
 ]
 
+LETTERS = 'üäßö'
+
 noun_bank = {
     'Animal': [
         'Katze.Cat.F',
+        'Kätzchen.Kitten.N',
+        'Löwe.Lion.M',
+        'Löwin.Lioness.F',
         'Hund.Dog.M',
         'Vogel.Bird.M',
         'Kuh.Cow.F',
@@ -120,6 +125,7 @@ noun_bank = {
         'Shorts.Shorts.F',
         'Schuhe.Shoes.F',
         'Tasche.Pocket.F',
+        'HandTasche.Handbag|Purse.F'
         'Mantel.Coat.M',
         'Fleck.Stain.M',
         'Kleidung.Clothes.F',
@@ -193,6 +199,7 @@ noun_bank = {
         'Schlafzimmer.Bedroom.N',
         'Küche.Kitchen.F',
         'Toilette.Toilet.F',
+        'Tasse.Cup.F',
         'Badezimmer.Bathroom.N',
         'Dusche.Shower.F',
         'Bleistift.Pencil.M',
@@ -209,6 +216,7 @@ noun_bank = {
         'Tasche.Bag.F',
         'Flasche.Bottle.F',
         'Kiste.Box.F',
+        'Zeitung.Newspaper.F',
         'Werkzeug.Tool.N',
         'Schreibtisch.Desk.M',
     ],
@@ -441,6 +449,7 @@ noun_bank = {
         'Plastik.Plastic.N',
         'Holz.Wood.N',
         'Stein.Stone.M',
+        'Papier.Paper.N',
         'Diamant.Diamond.M',
         'Gold.Gold.N',
         'Kupfer.Copper.N',
@@ -466,7 +475,8 @@ noun_bank = {
         'Geld.Money.N',
         'Geldautomat.ATM.M',
         'Euro.Euro.M',
-        'Rechnung.Check.F'
+        'Rechnung.Check.F',
+        'Nummer.Number.F'
     ],
 }
 
