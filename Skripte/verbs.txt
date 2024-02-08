@@ -1,0 +1,162 @@
+1	sein	be
+ich bindu bister/sie/es istwir sindihr seidSie sind
+
+2	haben	have
+ich habedu haster/sie/es hatwir habenihr habtSie haben
+
+3	können	be able/can
+ich kanndu kannster/sie/es kannwir könnenihr könntSie können
+
+4	werden	become
+ich werdedu wirster/sie/es wirdwir werdenihr werdetSie werden
+
+5	sagen	say/tell
+ich sagedu sagster/sie/es sagtwir sagenihr sagtSie sagen
+
+6	müssen	have to/must
+ich mussdu musster/sie/es musswir müssenihr müsstSie müssen
+
+7	geben	give
+ich gebedu gibster/sie/es gibtwir gebenihr gebtSie geben
+
+8	wollen 	want
+ich willdu willster/sie/es willwir wollenihr wolltSie wollen
+
+9	machen	make
+ich machedu machster/sie/es machtwir machenihr machtSie machen
+
+10	kommen	come
+ich kommedu kommster/sie/es kommtwir kommenihr kommtSie kommen
+
+11	sollen	ought/should
+ich solldu sollster/sie/es sollwir sollenihr solltSie sollen
+
+12	gehen	go
+ich gehedu gehster/sie/es gehtwir gehenihr gehtSie gehen
+
+13	wissen	know
+ich weißdu weißter/sie/es weißwir wissenihr wisstSie wissen
+
+14	sehen	see
+ich sehedu siehster/sie/es siehtwir sehenihr sehtSie sehen
+
+15	lassen	leave/let
+ich lassedu lässter/sie/es lässtwir lassenihr lasstSie lassen
+
+16	stehen	stand
+ich stehedu stehster/sie/es stehtwir stehenihr stehtSie stehen
+
+17	leben	live
+ich lebedu lebster/sie/es lebtwir lebenihr lebtSie leben
+
+18	finden	find
+ich findedu findester/sie/es findetwir findenihr findetSie finden
+
+19	liegen	lie (i.e. be lying down)
+ich liegedu liegster/sie/es liegtwir liegenihr liegtSie liegen
+
+20	bleiben	stay
+ich bleibedu bleibster/sie/es bleibtwir bleibenihr bleibtSie bleiben
+
+21	heißen	be called
+ich heißedu heißter/sie/es heißtwir heißenihr heißtSie heißen
+
+22	denken	think
+ich denkedu denkster/sie/es denktwir denkenihr denktSie denken
+
+23	stellen	provide
+ich stelledu stellster/sie/es stelltwir stellenihr stelltSie stellen
+
+24	zeigen	show
+ich zeigedu zeigster/sie/es zeigtwir zeigenihr zeigtSie zeigen
+
+25	nehmen	take
+ich nehmedu nimmster/sie/es nimmtwir nehmenihr nehmtSie nehmen
+
+26	dürfen	may/be allowed to
+ich darfdu darfster/sie/es darfwir dürfenihr dürftSie dürfen
+
+27	hören	hear
+ich höredu hörster/sie/es hörtwir hörenihr hörtSie hören
+
+28	fragen	ask
+ich fragedu fragster/sie/es fragtwir fragenihr fragtSie fragen
+
+29	halten	stop
+ich haltedu hältster/sie/es hältwir haltenihr haltetSie halten
+
+30	glauben	believe
+ich glaubedu glaubster/sie/es glaubtwir glaubenihr glaubtSie glauben
+
+31	fühlen	feel/sense
+ich fühledu fühlster/sie/es fühltwir fühlenihr fühltSie fühlen
+
+32	folgen	follow
+ich folgedu folgster/sie/es folgtwir folgenihr folgtSie folgen
+
+33	sprechen	speak
+ich sprechedu sprichster/sie/es sprichtwir sprechenihr sprechtSie sprechen
+
+34	führen	lead
+ich führedu führster/sie/es führtwir führenihr führtSie führen
+
+35	bringen	bring
+ich bringedu bringster/sie/es bringtwir bringenihr bringtSie bringen
+
+36	mögen	like
+ich magdu magster/sie/es magwir mögenihr mögtSie mögen
+
+37	brauchen	need
+ich brauchedu brauchster/sie/es brauchtwir brauchenihr brauchtSie brauchen
+
+38	nennen	name
+ich nennedu nennster/sie/es nenntwir nennenihr nenntSie nennen
+
+39	schreiben	write
+ich schreibe
+du schreibster/sie/es schreibtwir schreibenihr schreibtSie schreiben
+
+40	ziehen	pull
+ich ziehedu ziehster/sie/es ziehtwir ziehenihr ziehtSie ziehen
+
+41	spielen	play
+ich spieledu spielster/sie/es spieltwir spielenihr spieltSie spielen
+
+42	verstehen	understand
+ich verstehedu verstehster/sie/es verstehtwir verstehenihr verstehtSie verstehen
+
+43	bekommen	get/receive
+ich bekommedu bekommster/sie/es bekommtwir bekommenihr bekommtSie bekommen
+
+44	meinen	mean
+ich meinedu meinster/sie/es meintwir meinenihr meintSie meinen
+
+45	fahren	drive
+ich fahredu fährster/sie/es fährtwir fahrenihr fahrtSie fahren
+
+46	kennen	know (person/place)
+ich kennedu kennster/sie/es kenntwir kennenihr kenntSie kennen
+
+47	vergessen	forget
+ich vergessedu vergisster/sie/es vergisstwir vergessenihr vergesstSie vergessen
+
+48	arbeiten	work
+ich arbeitedu arbeitester/sie/es arbeitetwir arbeitenihr arbeitetSie arbeiten
+
+49	versuchen	try
+ich versuchedu versuchster/sie/es versuchtwir versuchenihr versuchtSie versuchen
+
+50	setzen	put
+ich setzedu setzter/sie/es setztwir setzenihr setztSie setzen
+
+51	essen	eat
+ich essedu isster/sie/es isstwir essenihr esstSie essen
+
+52	schmecken	taste
+ich schmeckedu schmeckster/sie/es schmecktwir schmeckenihr schmecktSie schmecken
+
+53	trinken	drink
+ich trinkedu trinkster/sie/es trinktwir trinkenihr trinktSie trinken
+
+54	tanzen	dance
+ich tanzedu tanzter/sie/es tanztwir tanzenihr tanztSie tanzen
