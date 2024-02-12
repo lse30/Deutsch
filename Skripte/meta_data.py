@@ -33,6 +33,7 @@ LETTERS = 'üäßö'
 noun_bank = {
     'Animal': [
         'Katze.Cat.F',
+        'Schnecke.Snail.F',
         'Kätzchen.Kitten.N',
         'Löwe.Lion.M',
         'Löwin.Lioness.F',
@@ -68,7 +69,8 @@ noun_bank = {
         'Transport.Transportation.M',
         'Van.Van.M',
         'Motorrad.Motorbike|Motorcycle.N',
-        'Roller.Scooter.M'
+        'Roller.Scooter.M',
+        'Bushaltestelle.Bus Stop.F'
     ],
     'Location': [
         'Stadt.City|Town.F',
@@ -110,6 +112,7 @@ noun_bank = {
         'Weltraum.Outer Space|Space.M',
         'Bank.Bank.F',
         'Museum.Museum.N',
+        'Kunstmuseum.Art Museum.N',
         'Apotheke.Pharmacy.F',
         'Stadtzentrum.City Centre|City Center.N'
     ],
@@ -125,7 +128,7 @@ noun_bank = {
         'Shorts.Shorts.F',
         'Schuhe.Shoes.F',
         'Tasche.Pocket.F',
-        'HandTasche.Handbag|Purse.F'
+        'HandTasche.Handbag|Purse.F',
         'Mantel.Coat.M',
         'Fleck.Stain.M',
         'Kleidung.Clothes.F',
@@ -190,6 +193,7 @@ noun_bank = {
     'Home': [
         'Couch.Couch.F',
         'Bett.Bed.N',
+        'Sitz.Seat.M',
         'Stuhl.Chair.M',
         'Tisch.Table.M',
         'Teppich.Carpet.M',
@@ -219,6 +223,11 @@ noun_bank = {
         'Zeitung.Newspaper.F',
         'Werkzeug.Tool.N',
         'Schreibtisch.Desk.M',
+        'Klavier.Piano.N',
+        'Gitarre.Guitar.F',
+        'Geige.Violin.F',
+        'Trommeln.Drums.F',
+        'Schrank.Wardrobe|Closet.M',
     ],
     'People': [
         'Sohn.Son.M',
@@ -316,7 +325,10 @@ noun_bank = {
         'Obstsalat.Fruit Salad.M',
         'Pizza.Pizza.F',
         'Döner.Doner Kebab.M',
-        'Tomate.Tomato.F'
+        'Tomate.Tomato.F',
+        'Kartoffel.Potato.F',
+        'Nachtisch.Dessert.M',
+        'Erdbeere.Strawberry.F',
     ],
     'DaysOfWeek': [
         'Montag.Monday.M',
@@ -362,7 +374,8 @@ noun_bank = {
         'Sommer.Summer.M',
         'Winter.Winter.M',
         'Frühling.Spring.M',
-        'Herbst.Autumn.M'
+        'Herbst.Autumn.M',
+        'Wetter.Weather.N'
     ],
     'Electronics': [
         'Uhr.Clock.F',
@@ -466,6 +479,7 @@ noun_bank = {
         'Rugby.Rugby.N',
         'Sport.Sport.M',
         'Spiel.Game.N',
+        'Schach.Chess.N',
     ],
     'Misc': [
         'Karte.Map.F',
@@ -476,7 +490,9 @@ noun_bank = {
         'Geldautomat.ATM.M',
         'Euro.Euro.M',
         'Rechnung.Check.F',
-        'Nummer.Number.F'
+        'Nummer.Number.F',
+        'Speisekarte.Menu.F',
+        'Urlaub.Holiday|Vacation.M',
     ],
 }
 
@@ -521,6 +537,7 @@ misc_bank = {
         'Gesund.Healthy',
         'Laut.Loud',
         'Ruhig.Quiet',
+        'Halb.Half',
         'Glücklich.Happy',
         'Traurig.Sad',
         'Schön.Beautiful',
@@ -562,6 +579,14 @@ misc_bank = {
         'Stressig.Stressful',
         'Frei.Free',
         'Fantastisch.Fantastic',
+        'Bequem.Comfortable',
+        'Bewölkt.Cloudy',
+        'Sonnig.Sunny',
+        'Neblig.Foggy',
+        'Später.Later',
+        'Nächste.Next',
+        'Schick.Chic',
+        'Aufregend.Exciting',
     ],
     'Pronouns': [  # TODO rethink this
         'Ich.I',
@@ -593,7 +618,13 @@ misc_bank = {
         'Prost.Cheers',
         'Bitte.Please',
         'Vielen Dank.Thank You Very Much',
-        'Kein Problem.No Problem'
+        'Kein Problem.No Problem',
+        'Bis Bald.See You Soon',
+        'Bis Später.See You Later',
+        'Genau.Exactly',
+        'Schade.Too Bad|Pity',
+        'Guten Appetit.Bon Appetit',
+        'Alles Gute.All Good|All The Best',
     ],
     'Conjunctions': [
         'Aber.But',
@@ -629,10 +660,19 @@ misc_bank = {
         'Hier.Here',
         'Dort.There',
         'Wo.Where',
+        'Wann.When',
+        'Welche.Which',
         'Warum.Why',
         'Wie.How',
         'Was.What',
+        'Nur.Only',
         'Jetzt.Now',
+        'Immer.Always',
+        'Oft.Often',
+        'Manchmal.Sometimes',
+        'Nie.Never',
+        'Einfach.Simply|Simple',
+        'Zusammen.Together',
         'Wirklich.Really',
         'Circa.Approximately',
         'Links.Left|To The Left',

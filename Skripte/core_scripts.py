@@ -1,6 +1,8 @@
 import os
 import logging
 
+BASE_DIR = './../Datenbank/Wörter'
+
 
 def create_logger(name, log_level=logging.INFO):
     logging.basicConfig()
@@ -53,11 +55,10 @@ def open_all_words(use_master=False):
 
 
 def write_to_master_word_bank():
-    base_dir = './../Datenbank/Wörter'
-    y = os.listdir(base_dir)
+    y = os.listdir(BASE_DIR)
     output = []
     for file in y:
-        words_list = open(f"{base_dir}/{file}", 'r', encoding='utf-8').readlines()
+        words_list = open(f"{BASE_DIR}/{file}", 'r', encoding='utf-8').readlines()
         category = file.replace('.csv', '')
         if len(words_list) > 1:
             words_meta_data = [x.split(',') for x in words_list[1:]]
@@ -107,15 +108,30 @@ def analyse_phrase_book():
     print(unique_words)
 
 
-def compare_datasets(set_a, set_b):
-    set_a_data = set([x.split(',')[0].lower() for file in set_a for x in read_file(file)[1:]])
-    set_b_data = set([x.split(',')[0].lower() for file in set_b for x in read_file(file)[1:]])
-    numbers = set([x.split(',')[0].lower() for x in read_file('./../Datenbank/Wörter/Other/Numbers.csv')[1:]])
-    set_a_data -= numbers
+def compare_datasets():
+    duolingo_word_file = './../Datenbank/vocabulary_2.csv'
+    duolingo_words = set([x.replace('\n', '').lower() for x in read_file(duolingo_word_file)])
 
-    missing_words = set_a_data - set_b_data
-    added_words = set_b_data - set_a_data
-    print(f"{len(set_a_data)} Total words in the bank")
-    print(f"{len(missing_words)} left to add")
-    print(missing_words)
-    print(f"Added {len(added_words)} new words")
+    nouns = [f"{BASE_DIR}/Nouns/{x}" for x in os.listdir(f"{BASE_DIR}/Nouns")]
+    script_nouns = set([x.split(',')[0].lower() for y in nouns for x in read_file(y)[1:]])
+
+    verbs = [f"{BASE_DIR}/Verbs/{x}" for x in os.listdir(f"{BASE_DIR}/Verbs")]
+    script_verbs = set([word.replace('\n', '') for file in verbs for line in read_file(file)[1:]
+                        for word in line.split(',')[1:]])
+
+    others = [f"{BASE_DIR}/Other/{x}" for x in os.listdir(f"{BASE_DIR}/Other") if 'Numbers' not in x]
+    script_other = set([x.split(',')[0].lower() for y in others for x in read_file(y)[1:]])
+
+    scripted_total = script_nouns.union(script_verbs, script_other)
+    unaccounted_duo_words = duolingo_words - scripted_total
+    new_words = scripted_total - duolingo_words
+    print(f"There are {len(duolingo_words)} duolingo words")
+    print(f"There are {len(scripted_total)} scripted words")
+    print(f"There are {len(new_words)} new words")
+    print(f"There are {len(unaccounted_duo_words)} unaccounted words")
+    for word in unaccounted_duo_words:
+        print(word)
+
+
+if __name__ == '__main__':
+    compare_datasets()

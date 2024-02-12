@@ -54,7 +54,6 @@ def write_words_to_file(word_category):
 
     for category, words_list in word_bank:
         if category + '.csv' in existing_files:
-            print("File already exists")
             file_data = read_file(f"{path}{category}.csv")
             existing_words = [x.split(',')[0] for x in file_data[1:]]
         else:
@@ -144,4 +143,4 @@ if __name__ == '__main__':
     new_files = [base_dir + x for x in os.listdir(base_dir)] + other_files
     # old_files = ['./../Datenbank/master_word_bank.csv']
     old_files = ['./../Datenbank/Wörter/other.csv']
-    compare_datasets(old_files, new_files)
+    # compare_datasets()

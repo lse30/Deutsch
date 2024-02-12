@@ -14,3 +14,4 @@ Schiff,Ship,N,1,15,5
 Flugzeug,Plane|Aeroplane|Airplane,N,1,11,5
 Motor,Engine,M,4,11,1
 Zug,Train,M,3,6,0
+Bushaltestelle,Bus Stop,F,0,0,0

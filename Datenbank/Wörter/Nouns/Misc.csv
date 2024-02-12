@@ -7,3 +7,6 @@ Geldautomat,Atm,M,1,8,2
 Bild,Image,N,1,8,2
 Geld,Money,N,1,3,0
 Rechnung,Check,F,0,0,0
+Nummer,Number,F,0,0,0
+Speisekarte,Menu,F,0,0,0
+Urlaub,Holiday|Vacation,M,0,0,0

@@ -28,3 +28,11 @@ Schreibtisch,Desk,M,1,18,10
 Badezimmer,Bathroom,N,2,4,0
 Boden,Floor,M,2,12,5
 Flasche,Bottle,F,0,0,0
+Tasse,Cup,F,0,0,0
+Zeitung,Newspaper,F,0,0,0
+Sitz,Seat,M,0,0,0
+Klavier,Piano,N,0,0,0
+Gitarre,Guitar,F,0,0,0
+Geige,Violin,F,0,0,0
+Trommeln,Drums,F,0,0,0
+Schrank,Wardrobe|Closet,M,0,0,0
