@@ -10,3 +10,5 @@ Rechnung,Check,F,0,0,0
 Nummer,Number,F,0,0,0
 Speisekarte,Menu,F,0,0,0
 Urlaub,Holiday|Vacation,M,0,0,0
+Weg,Way,M,0,0,0
+Sprache,Language,F,0,0,0

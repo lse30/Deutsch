@@ -70,12 +70,13 @@ noun_bank = {
         'Van.Van.M',
         'Motorrad.Motorbike|Motorcycle.N',
         'Roller.Scooter.M',
-        'Bushaltestelle.Bus Stop.F'
+        'Bushaltestelle.Bus Stop.F',
+        'Aufzug.Lift|Elevator.M',
     ],
     'Location': [
         'Stadt.City|Town.F',
         'Haus.House.N',
-        'Apartment.Apartment.N',
+        'Apartment|Wohnung.Apartment.N',
         'Straße.Street|Road.F',
         'Flughafen.Airport.M',
         'Hafen.Port.M',
@@ -329,6 +330,7 @@ noun_bank = {
         'Kartoffel.Potato.F',
         'Nachtisch.Dessert.M',
         'Erdbeere.Strawberry.F',
+        'Apfelkuchen.Apple Cake.M',
     ],
     'DaysOfWeek': [
         'Montag.Monday.M',
@@ -468,7 +470,9 @@ noun_bank = {
         'Kupfer.Copper.N',
         'Silber.Silver.N'
     ],
-    'Measurements': [],
+    'Measurements': [
+        'Kilo.Kilo.N'
+    ],
     'Sport': [
         'Fußball.Football.M',
         'Basketball.Basketball.M',
@@ -493,6 +497,8 @@ noun_bank = {
         'Nummer.Number.F',
         'Speisekarte.Menu.F',
         'Urlaub.Holiday|Vacation.M',
+        'Weg.Way.M',
+        'Sprache.Language.F',
     ],
 }
 
@@ -587,6 +593,7 @@ misc_bank = {
         'Nächste.Next',
         'Schick.Chic',
         'Aufregend.Exciting',
+        'Getrennt.Separated',
     ],
     'Pronouns': [  # TODO rethink this
         'Ich.I',
@@ -598,7 +605,9 @@ misc_bank = {
         'Wir.We',
         'Ihr.You All(informal)',
         'Sie.You All(formal)',
-        'sie.They'
+        'sie.They',
+        'Mich.Me',
+        'Wer.Who'
     ],
     'CommonSayings': [
         'Hallo.Hello',
@@ -625,6 +634,11 @@ misc_bank = {
         'Schade.Too Bad|Pity',
         'Guten Appetit.Bon Appetit',
         'Alles Gute.All Good|All The Best',
+        'Heute Nachmittag.This Afternoon',
+        'Heute Morgen.This Morning',
+        'Heute Abend.Tonight|This Evening',
+        'Das Geht.That Works',
+        'Gern Geschehen.You\'re Welcome|You Are Welcome',
     ],
     'Conjunctions': [
         'Aber.But',
@@ -645,6 +659,8 @@ misc_bank = {
         'Wider.Against|Contrary To',
         'Zu.To',
         'Mit.With',
+        'Bis.Until',
+        'Von.From',
         'An.At',
         'Auf.On|To|At',
         'Hinter.Behind',
@@ -657,6 +673,7 @@ misc_bank = {
     ],
     'Adverbs': [
         'Sehr.Very',
+        'Auch.Also',
         'Hier.Here',
         'Dort.There',
         'Wo.Where',
@@ -674,7 +691,12 @@ misc_bank = {
         'Einfach.Simply|Simple',
         'Zusammen.Together',
         'Wirklich.Really',
+        'Gern.Gladly',
         'Circa.Approximately',
+        'In Der Nähe|Nahe.Nearby',
+        'Weit Weg.Far Away',
+        'Geradeaus.Straight Ahead',
+        'Hinten.Behind|Rear|Back',
         'Links.Left|To The Left',
         'Rechts.Right|To The Right'
     ],

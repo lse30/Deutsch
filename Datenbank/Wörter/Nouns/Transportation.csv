@@ -15,3 +15,4 @@ Flugzeug,Plane|Aeroplane|Airplane,N,1,11,5
 Motor,Engine,M,4,11,1
 Zug,Train,M,3,6,0
 Bushaltestelle,Bus Stop,F,0,0,0
+Aufzug,Lift|Elevator,M,0,0,0
