@@ -1,72 +1,72 @@
-english,german,ich,du,er/sie/es,wir,ihr,Sie
-be,sein,bin,bist,ist,sind,seid,sind
-have,haben,habe,hast,hat,haben,habt,haben
-be able/can,können,kann,kannst,kann,können,könnt,können
-become,werden,werde,wirst,d,werden,werdet,werden
-say/tell,sagen,sage,sagst,sagt,sagen,sagt,sagen
-have to/must,müssen,muss,musst,muss,müssen,müsst,müssen
-give,geben,gebe,gibst,gibt,geben,gebt,geben
-want,wollen,will,willst,will,wollen,wollt,wollen
-would like,möchten,möchte,möchtest,möchte,möchten,möchtet,möchten
-make,machen,mache,machst,macht,machen,macht,machen
-come,kommen,komme,kommst,kommt,kommen,kommt,kommen
-ought/should,sollen,soll,sollst,soll,sollen,sollt,sollen
-go,gehen,gehe,gehst,geht,gehen,geht,gehen
-know,wissen,weiß,weißt,weiß,wissen,wisst,wissen
-see,sehen,sehe,siehst,sieht,sehen,seht,sehen
-leave/let,lassen,lasse,lässt,lässt,lassen,lasst,lassen
-stand,stehen,stehe,stehst,steht,stehen,steht,stehen
-live,leben,lebe,lebst,lebt,leben,lebt,leben
-find,finden,finde,findest,findet,finden,findet,finden
-lie (i.e. be lying down),liegen,liege,liegst,liegt,liegen,liegt,liegen
-stay,bleiben,bleibe,bleibst,bleibt,bleiben,bleibt,bleiben
-be called,heißen,heiße,heißt,heißt,heißen,heißt,heißen
-think,denken,denke,denkst,denkt,denken,denkt,denken
-provide,stellen,stelle,stellst,stellt,stellen,stellt,stellen
-show,zeigen,zeige,zeigst,zeigt,zeigen,zeigt,zeigen
-take,nehmen,nehme,nimmst,nimmt,nehmen,nehmt,nehmen
-may/be allowed to,dürfen,darf,darfst,darf,dürfen,dürft,dürfen
-hear,hören,höre,hörst,hört,hören,hört,hören
-ask,fragen,frage,fragst,fragt,fragen,fragt,fragen
-stop,halten,halte,hältst,hält,halten,haltet,halten
-believe,glauben,glaube,glaubst,glaubt,glauben,glaubt,glauben
-feel/sense,fühlen,fühle,fühlst,fühlt,fühlen,fühlt,fühlen
-follow,folgen,folge,folgst,folgt,folgen,folgt,folgen
-speak,sprechen,spreche,sprichst,spricht,sprechen,sprecht,sprechen
-lead,führen,führe,führst,führt,führen,führt,führen
-bring,bringen,bringe,bringst,bringt,bringen,bringt,bringen
-like,mögen,mag,magst,mag,mögen,mögt,mögen
-need,brauchen,brauche,brauchst,braucht,brauchen,braucht,brauchen
-name,nennen,nenne,nennst,nennt,nennen,nennt,nennen
-write,schreiben,schreibe,schreibst,schreibt,schreiben,schreibt,schreiben
-pull,ziehen,ziehe,ziehst,zieht,ziehen,zieht,ziehen
-play,spielen,spiele,spielst,spielt,spielen,spielt,spielen
-understand,verstehen,verstehe,verstehst,versteht,verstehen,versteht,verstehen
-get/receive,bekommen,bekomme,bekommst,bekommt,bekommen,bekommt,bekommen
-mean,meinen,meine,meinst,meint,meinen,meint,meinen
-drive,fahren,fahre,fährst,fährt,fahren,fahrt,fahren
-know (person/place),kennen,kenne,kennst,kennt,kennen,kennt,kennen
-forget,vergessen,vergesse,vergisst,vergisst,vergessen,vergesst,vergessen
-work,arbeiten,arbeite,arbeitest,arbeitet,arbeiten,arbeitet,arbeiten
-try,versuchen,versuche,versuchst,versucht,versuchen,versucht,versuchen
-put,setzen,setze,setzt,setzt,setzen,setzt,setzen
-eat,essen,esse,isst,isst,essen,esst,essen
-taste,schmecken,schmecke,schmeckst,schmeckt,schmecken,schmeckt,schmecken
-drink,trinken,trinke,trinkst,trinkt,trinken,trinkt,trinken
-dance,tanzen,tanze,tanzt,tanzt,tanzen,tanzt,tanzen
-meet,treffen,treffe,triffst,trifft,treffen,trefft,treffen
-meet,treffen,treffe,triffst,trifft,treffen,trefft,treffen
-pay,zahlen,zahle,zahlst,zahlt,zahlen,zahlt,zahlen
-swim,schwimmen,schwimme,schwimmst,schwimmt,schwimmen,schwimmt,schwimmen
-learn,lernen,lerne,lernst,lernt,lernen,lernt,lernen
-order,bestellen,bestelle,bestellst,bestellt,bestellen,bestellt,bestellen
-wait,warten,warte,wartest,wartet,warten,wartet,warten
-buy,kaufen,kaufe,kaufst,kauft,kaufen,kauft,kaufen
-love,lieben,liebe,liebst,liebt,lieben,liebt,lieben
-cost,kosten,koste,kostest,kostet,kosten,kostet,kosten
-cancel,stornieren,storniere,stornierst,storniert,stornieren,storniert,stornieren
-photograph,fotografieren,fotografiere,fotografierst,fotografiert,fotografieren,fotografiert,fotografieren
-repeat,wiederholen,wiederhole,wiederholst,wiederholt,wiederholen,wiederholt,wiederholen
-hike,wandern,wandere,wanderst,wandert,wandern,wandert,wandern
-paint,malen,male,malst,malt,malen,malt,malen
-cook,kochen,koche,kochst,kocht,kochen,kocht,kochen
+english,german,ich,du,er/sie/es,wir,ihr,Sie,Box,Passes,Fails
+be,sein,bin,bist,ist,sind,seid,sind,0,0,0
+have,haben,habe,hast,hat,haben,habt,haben,0,0,0
+be able/can,können,kann,kannst,kann,können,könnt,können,0,0,0
+become,werden,werde,wirst,wird,werden,werdet,werden,0,0,0
+say/tell,sagen,sage,sagst,sagt,sagen,sagt,sagen,0,0,0
+have to/must,müssen,muss,musst,muss,müssen,müsst,müssen,0,0,0
+give,geben,gebe,gibst,gibt,geben,gebt,geben,0,0,0
+want,wollen,will,willst,will,wollen,wollt,wollen,0,0,0
+would like,möchten,möchte,möchtest,möchte,möchten,möchtet,möchten,0,0,0
+make,machen,mache,machst,macht,machen,macht,machen,0,0,0
+come,kommen,komme,kommst,kommt,kommen,kommt,kommen,0,0,0
+ought/should,sollen,soll,sollst,soll,sollen,sollt,sollen,0,0,0
+go,gehen,gehe,gehst,geht,gehen,geht,gehen,0,0,0
+know,wissen,weiß,weißt,weiß,wissen,wisst,wissen,0,0,0
+see,sehen,sehe,siehst,sieht,sehen,seht,sehen,0,0,0
+leave/let,lassen,lasse,lässt,lässt,lassen,lasst,lassen,0,0,0
+stand,stehen,stehe,stehst,steht,stehen,steht,stehen,0,0,0
+live,leben,lebe,lebst,lebt,leben,lebt,leben,0,0,0
+find,finden,finde,findest,findet,finden,findet,finden,0,0,0
+lie (i.e. be lying down),liegen,liege,liegst,liegt,liegen,liegt,liegen,0,0,0
+stay,bleiben,bleibe,bleibst,bleibt,bleiben,bleibt,bleiben,0,0,0
+be called,heißen,heiße,heißt,heißt,heißen,heißt,heißen,0,0,0
+think,denken,denke,denkst,denkt,denken,denkt,denken,0,0,0
+provide,stellen,stelle,stellst,stellt,stellen,stellt,stellen,0,0,0
+show,zeigen,zeige,zeigst,zeigt,zeigen,zeigt,zeigen,0,0,0
+take,nehmen,nehme,nimmst,nimmt,nehmen,nehmt,nehmen,0,0,0
+may/be allowed to,dürfen,darf,darfst,darf,dürfen,dürft,dürfen,0,0,0
+hear,hören,höre,hörst,hört,hören,hört,hören,0,0,0
+ask,fragen,frage,fragst,fragt,fragen,fragt,fragen,0,0,0
+stop,halten,halte,hältst,hält,halten,haltet,halten,0,0,0
+believe,glauben,glaube,glaubst,glaubt,glauben,glaubt,glauben,0,0,0
+feel/sense,fühlen,fühle,fühlst,fühlt,fühlen,fühlt,fühlen,0,0,0
+follow,folgen,folge,folgst,folgt,folgen,folgt,folgen,0,0,0
+speak,sprechen,spreche,sprichst,spricht,sprechen,sprecht,sprechen,0,0,0
+lead,führen,führe,führst,führt,führen,führt,führen,0,0,0
+bring,bringen,bringe,bringst,bringt,bringen,bringt,bringen,0,0,0
+like,mögen,mag,magst,mag,mögen,mögt,mögen,0,0,0
+need,brauchen,brauche,brauchst,braucht,brauchen,braucht,brauchen,0,0,0
+name,nennen,nenne,nennst,nennt,nennen,nennt,nennen,0,0,0
+write,schreiben,schreibe,schreibst,schreibt,schreiben,schreibt,schreiben,0,0,0
+pull,ziehen,ziehe,ziehst,zieht,ziehen,zieht,ziehen,0,0,0
+play,spielen,spiele,spielst,spielt,spielen,spielt,spielen,0,0,0
+understand,verstehen,verstehe,verstehst,versteht,verstehen,versteht,verstehen,0,0,0
+get/receive,bekommen,bekomme,bekommst,bekommt,bekommen,bekommt,bekommen,0,0,0
+mean,meinen,meine,meinst,meint,meinen,meint,meinen,0,0,0
+drive,fahren,fahre,fährst,fährt,fahren,fahrt,fahren,0,0,0
+know (person/place),kennen,kenne,kennst,kennt,kennen,kennt,kennen,0,0,0
+forget,vergessen,vergesse,vergisst,vergisst,vergessen,vergesst,vergessen,0,0,0
+work,arbeiten,arbeite,arbeitest,arbeitet,arbeiten,arbeitet,arbeiten,0,0,0
+try,versuchen,versuche,versuchst,versucht,versuchen,versucht,versuchen,0,0,0
+put,setzen,setze,setzt,setzt,setzen,setzt,setzen,0,0,0
+eat,essen,esse,isst,isst,essen,esst,essen,0,0,0
+taste,schmecken,schmecke,schmeckst,schmeckt,schmecken,schmeckt,schmecken,0,0,0
+drink,trinken,trinke,trinkst,trinkt,trinken,trinkt,trinken,0,0,0
+dance,tanzen,tanze,tanzt,tanzt,tanzen,tanzt,tanzen,0,0,0
+meet,treffen,treffe,triffst,trifft,treffen,trefft,treffen,0,0,0
+meet,treffen,treffe,triffst,trifft,treffen,trefft,treffen,0,0,0
+pay,zahlen,zahle,zahlst,zahlt,zahlen,zahlt,zahlen,0,0,0
+swim,schwimmen,schwimme,schwimmst,schwimmt,schwimmen,schwimmt,schwimmen,0,0,0
+learn,lernen,lerne,lernst,lernt,lernen,lernt,lernen,0,0,0
+order,bestellen,bestelle,bestellst,bestellt,bestellen,bestellt,bestellen,0,0,0
+wait,warten,warte,wartest,wartet,warten,wartet,warten,0,0,0
+buy,kaufen,kaufe,kaufst,kauft,kaufen,kauft,kaufen,0,0,0
+love,lieben,liebe,liebst,liebt,lieben,liebt,lieben,0,0,0
+cost,kosten,koste,kostest,kostet,kosten,kostet,kosten,0,0,0
+cancel,stornieren,storniere,stornierst,storniert,stornieren,storniert,stornieren,0,0,0
+photograph,fotografieren,fotografiere,fotografierst,fotografiert,fotografieren,fotografiert,fotografieren,0,0,0
+repeat,wiederholen,wiederhole,wiederholst,wiederholt,wiederholen,wiederholt,wiederholen,0,0,0
+hike,wandern,wandere,wanderst,wandert,wandern,wandert,wandern,0,0,0
+paint,malen,male,malst,malt,malen,malt,malen,0,0,0
+cook,kochen,koche,kochst,kocht,kochen,kocht,kochen,0,0,0
